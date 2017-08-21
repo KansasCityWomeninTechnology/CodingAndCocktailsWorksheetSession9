@@ -1,0 +1,11 @@
+{
+  "plugins": [
+    "codeblock-label",
+    "custom-favicon",
+    "hints",
+    "sectionx"
+  ],
+  "pluginsConfig": {
+    "favicon": "assets/images/favicon.ico"
+  }
+}

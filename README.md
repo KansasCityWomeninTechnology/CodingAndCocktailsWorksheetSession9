@@ -30,4 +30,4 @@ While following along with the worksheet, type out the commands instead of doing
 
 # TODO: Fix Tools Image & Add images
 
-[![](/images/glossary.png)](http://bit.ly/CnCgloss) [![](/images/tools.png)](http://bit.ly/CnCTheTools)
+[![](/assets/images/glossary.png)](http://bit.ly/CnCgloss) [![](/assets/images/tools.png)](http://bit.ly/CnCTheTools)
