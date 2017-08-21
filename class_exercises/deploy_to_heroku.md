@@ -34,3 +34,5 @@
   ```
 
 7. The output includes deployment details, including the URL. You'll see a message like `https://cocktail-trivia-api-2017.herokuapp.com/ deployed to Heroku`
+
+8. Use Postman to check out your API at your Heroku URL.
