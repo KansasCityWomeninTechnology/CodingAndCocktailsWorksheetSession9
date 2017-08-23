@@ -6,8 +6,7 @@
 <hr>
 
 ### Overview {#overview}
-
-Some stuff about APIs/Node/REST/SOAP
+Tonight you learned about what an Application Programming Interface (API) is and how they are structured.  Now let's create one of our own and use it in our application!
 
 {% hint style='danger' %}
 While following along with the worksheet, type out the commands instead of doing a copy & paste (_unless instructed to copy & paste_) to avoid inadvertently using any incorrect characters.

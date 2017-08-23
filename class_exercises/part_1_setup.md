@@ -1,36 +1,53 @@
-# Part 1
+# Part 1: Initialize the Project
 
-0. Download and install [Postman](https://www.getpostman.com/).
+## Setup
 
-1. In your _CodingAndCocktails_ directory create a new folder named _trivia-api_.
+1. In your Command Line Interface (aka CLI: That means Git Bash or iTerm2), navigate to your _CodingAndCocktails_ folder by typing: 
 
-2. In your CLI, navigate to _CodingAndCocktails/trivia-api_ folder. Type:
-
-  {% label %}CLI{% endlabel %}
+  {% label %}iTerm2/Git Bash{% endlabel %}
   ```
-  cd <your home directory>/CodingAndCocktails/trivia-api
+  cd <your home directory>/CodingAndCocktails
   ```
 
   {% hint style='tip' %}
-
+  #### Command line woes?
   - Your home directory is:
-    - Mac: _/users/<yourUsername>_
-    - Windows: _C:/Users/<youUsername>_
-  - Command to change folders: ``cd <folderToGoTo>``
+    - Mac: `/users/<yourUsername>`
+    - Windows: `C:/Users/<yourUsername>`
+  - Command to change folders: `cd <folderToGoTo>`
+  - Command to make a folder: `mkdir <newFolder>`
   - You can also use **~** as a shortcut in CLI for your home directory: ``cd ~``
-  - Command to make a folder: ``mkdir <newFolder>``
-  - Most command line applications are not case sensitive, but a few are!
 
+  Revisit the command line worksheet from March:
+  [bit.ly/CnCMarWork](http://bit.ly/CnCMarWork)
   {% endhint %}
 
-3. Initialize the _trivia-api_ directory to create _package.json_, so we can install some **npm** packages. Type:
+2.  Make a new folder named _trivia-api_. 
 
-  {% label %}CLI{% endlabel %}
+  {% label %}iTerm2/Git Bash{% endlabel %}
+  ```
+  mkdir trivia-api
+  ```
+
+3.  Move into that new folder.
+
+  {% label %}iTerm2/Git Bash{% endlabel %}
+  ```
+  cd trivia-api
+  ```
+
+  {% hint style='tip' %}
+If you start typing the name of a folder or file, hit tab and it will autocomplete
+  {% endhint %}
+
+4. Next we need to initialize the project which will create a _package.json_ file which will enable us to install and use some **npm** packages.  If you were here last month you might remember the _package.json_ and talking about how packages work!
+
+  {% label %}iTerm2/Git Bash{% endlabel %}
   ```
   npm init
   ```
 
-4. You will be prompted for values to populate the _package.json_. The first prompt will be *package name: (trivia-api)**.
+5. You will be prompted for values to populate the _package.json_. The first prompt will be *package name: (trivia-api)**.
 
   For all but one prompt, you'll hit the **enter** key to use the default value. The 4th prompt is the one we care about, **entry point: (index.js)**. For that prompt, type `server.js` followed by the **enter** key.
 
