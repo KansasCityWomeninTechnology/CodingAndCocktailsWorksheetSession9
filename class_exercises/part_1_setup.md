@@ -39,28 +39,37 @@
   {% hint style='tip' %}
 If you start typing the name of a folder or file, hit tab and it will autocomplete
   {% endhint %}
+  
+## package.json
 
-4. Next we need to initialize the project which will create a _package.json_ file which will enable us to install and use some **npm** packages.  If you were here last month you might remember the _package.json_ and talking about how packages work!
+1. Next we need to initialize the project which will create a _package.json_ file which will enable us to install and use some **npm** packages.  If you were here last month you might remember the _package.json_ and talking about how packages work!
 
   {% label %}iTerm2/Git Bash{% endlabel %}
   ```
   npm init
   ```
+  
+  Running this command will prompt you for values to populate the _package.json_ file.  This file holds data about your project. 
 
-5. You will be prompted for values to populate the _package.json_. The first prompt will be *package name: (trivia-api)**.
+ The first prompt will be *package name: (trivia-api)**. It may not be obvious here that it is actually prompting you for input there but it is. 
 
-  For all but one prompt, you'll hit the **enter** key to use the default value. The 4th prompt is the one we care about, **entry point: (index.js)**. For that prompt, type `server.js` followed by the **enter** key.
+  Press the **enter** key to use the default value for the first three prompts. The 4th prompt is one we want to change, **entry point: (index.js)**. For that prompt, type `server.js` followed by the **enter** key.
 
-  Hit **enter** for the remaining prompts. [Including for the last prompt **Is this ok? (yes)**]
+  Hit **enter** for the remaining prompts unless you'd like to enter your name at the Author prompt.  Make sure you also press **enter** for the last prompt **Is this ok? (yes)**
+  
+  ![](/npm-init.gif)
 
-4. Install our packages. Type:
+## Install Packages
+1. There are a few packages that we are going to use in this project.  These are bits of code that other developers have created and we are able to pull in and use in our project so that we don't have to try to reinvent the wheel. Type:
 
-  {% label %}CLI{% endlabel %}
+  {% label %}Git Bash/iTerm2{% endlabel %}
   ```
   npm install cors express lodash node-fetch
   ```
-  https://www.npmjs.com/package/cors
-  https://www.npmjs.com/package/express
+  
+  For additional context on the packages take a look at their pages on the npm website:
+  [cors](https://www.npmjs.com/package/cors)
+  [express](https://www.npmjs.com/package/express)
   https://www.npmjs.com/package/lodash
   https://www.npmjs.com/package/node-fetch
 
