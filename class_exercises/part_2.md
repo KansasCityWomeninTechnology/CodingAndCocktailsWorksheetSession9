@@ -4,7 +4,9 @@
 
 2. Select `New File` and name it _server.js_.
 
-3. We'll utilize the **cors** and **express** packages in the _server.js_ file by adding the following two lines to the top of your _server.js_ file.
+3. In order to use a package in your project, you must require it in to the file you want to use it in. Typically you set a variable equal to this require statement to give it a place from which the package can be used and accessed.
+
+  Utilize the **cors** and **express** packages in the _server.js_ file by adding the following two lines to the top of the _server.js_ file:
 
   {% label %}Atom | server.js{% endlabel %}
   ```
@@ -12,15 +14,23 @@
   var express = require('express');
   ```
 
-3. Set `app` to an instance of `express` and set `port`
+4. Place your cursor at the end of the line requiring `express` in to the _server.js_ file and press enter twice. Create an `app` variable and set it to an instance of express by typing: 
+
+to an instance of `express` and set `port`
 
   {% label %}Atom | server.js{% endlabel %}
   ```
   var app = express();
+  ```
+  
+4. Next, press enter to add a `port` variable on the next line and set it to `process.env.PORT || 8080`: 
+
+  {% label %}Atom | server.js{% endlabel %}
+  ```
   var port = process.env.PORT || 8080;
   ```
-
-  The `process.env.PORT` will be populated by Heroku later and will fallback to `8080` locally.
+  
+  The `process.env.PORT` will be populated by Heroku later when the application is deployed and because we use the `||` to indicate "OR" the code will fallback to `8080` locally when it sees that `process.env.PORT` is not populated locally.
 
 4. Initiate router
 
