@@ -1,8 +1,10 @@
 # Part 2
 
-1. Create a new file in _trivia-api_ and name it _server.js_.
+1. In Atom, right click anywhere on the left side section of the screen where the `trivia-api` folder and the `package.json` file are displayed. 
 
-2. Include the **cors** and **express** packages in our _server.js_ file.
+2. Select `New File` and name it _server.js_.
+
+3. We'll utilize the **cors** and **express** packages in the _server.js_ file by adding the following two lines to the top of your _server.js_ file.
 
   {% label %}Atom | server.js{% endlabel %}
   ```
