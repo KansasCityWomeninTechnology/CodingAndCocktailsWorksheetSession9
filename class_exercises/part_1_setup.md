@@ -126,4 +126,4 @@ You can configure your system to recognize the command (ask a mentor for help) o
   "nm": "nodemon server.js"
   ```
 
-8. Great work!  Compare your `package.json` with the Part 1 [Answer key](https://github.com/KansasCityWomeninTechnology/trivia-api/tree/answer-key-part-1).
+8. Great work!  Compare your `package.json` with the [Part 1 Answer key](https://github.com/KansasCityWomeninTechnology/trivia-api/tree/answer-key-part-1).
