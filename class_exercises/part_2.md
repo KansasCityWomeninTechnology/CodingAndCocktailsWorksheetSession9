@@ -16,8 +16,6 @@
 
 4. Place your cursor at the end of the line requiring `express` in to the _server.js_ file and press enter twice. Create an `app` variable and set it to an instance of express by typing: 
 
-to an instance of `express` and set `port`
-
   {% label %}Atom | server.js{% endlabel %}
   ```
   var app = express();
@@ -30,16 +28,18 @@ to an instance of `express` and set `port`
   var port = process.env.PORT || 8080;
   ```
   
-  The `process.env.PORT` will be populated by Heroku later when the application is deployed and because we use the `||` to indicate "OR" the code will fallback to `8080` locally when it sees that `process.env.PORT` is not populated locally.
+  {% hint style='info' %}
+The `process.env.PORT` will be populated by Heroku later when the application is deployed and because we use the `||` to indicate "OR" the code will fallback to `8080` locally when it sees that `process.env.PORT` is not populated locally.
+  {% endhint %}
 
-4. Initiate router  
+4. The next step is to initiate the router.  This means we're setting up the piece of code that will direct a user to the right location when they visit the application.  Place your cursor at the end of the line of code that sets the port and press enter twice.  Then create a variable named `apiRouter` and set it to your router instance like below: 
 
   {% label %}Atom | server.js{% endlabel %}
   ```
   var apiRouter = express.Router();
   ```
 
-5. Create your first route.
+5. Next, add the default route.  Press enter twice from the end of the line that initiates the router and type the following:
 
   {% label %}Atom | server.js{% endlabel %}
   ```
@@ -47,22 +47,50 @@ to an instance of `express` and set `port`
     res.json({ message: 'hooray! your API is working!' });
   });
   ```
+  
+  This code is saying that when someone requests the root route (`apiRouter.get('/'`), respond (`res`) with a JavaScript Object Notation formatted piece of data (`.json`) with a key of `message` and a value of `hooray! your API is working!`. 
+  
+  !Challenge! Grab a mentor and tell them what you would change if you wanted to respond to a user hitting a /data route.
 
-4. We're going to chain some methods
+4. Next you'll configure the application by adding several methods to it.  This is called "chaining."
+
+  1. Ensure there is a blank line between the end of the close of the routing function and your cursor.  Type: 
 
   {% label %}Atom | server.js{% endlabel %}
   ```
   app
-    .use(cors())
-    .use('/api', apiRouter)
-    .listen(port, function() {
-      console.log('API Magic happening on port ' + port);
-    });
   ```
+  
+  2. Enable calling to the API from any origin - remember this is called "CORS.".  
+  
+    1. With your cursor at the end of the `app` line, press enter to move to the next line.
+    
+    2. Press tab to indent the code.  This is a common practice when chaining methods to make it easier to read the code!
+    
+    3. Type: 
+    
+    {% label %}Atom | server.js{% endlabel %}
+    ```
+    .use(cors())
+    ```
+    
+  3. Tell the application to use the API router for any URL that starts with `/api`.
+  
+     1. Press enter. Atom should automatically align your indentation with the `.use(cors())` line from above.  This next line should be indented just as far as that line is.  Type:  
 
-  Use cors package to enable all cors.  
-  Use API router for any URL starting with `/api`.  
-  Tell the app which port to listen to for API requests.
+      {% label %}Atom | server.js{% endlabel %}
+      ```
+      .use('/api', apiRouter)
+      ```
+
+  4. Tell the application which port to listen for API requests on.  `8080` is a common port to use here. Press enter to move to a new line and type: 
+    
+    {% label %}Atom | server.js{% endlabel %}
+      ```
+      .listen(port, function() {
+        console.log('API Magic happening on port ' + port);
+      });
+      ```
 
 5. Fire up your server
 
