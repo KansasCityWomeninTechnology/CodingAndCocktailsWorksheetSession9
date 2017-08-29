@@ -99,6 +99,7 @@ The `process.env.PORT` will be populated by Heroku later when the application is
   npm run nm
   ```
 
+# TODO: Images
 6. Open **Postman**
 
   1. Make sure **GET** is selected
