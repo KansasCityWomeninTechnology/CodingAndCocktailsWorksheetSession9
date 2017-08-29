@@ -99,13 +99,14 @@ The `process.env.PORT` will be populated by Heroku later when the application is
   npm run nm
   ```
 
-# TODO: Images
 6. Open **Postman**
 
-  1. Make sure **GET** is selected
+  1. Make sure **GET** is selected in the HTTP dropdown.
 
-  2. In the field that says **Enter request URL**, enter `http://localhost:8080/api`
+  2. In the field that says **Enter request URL**, type: `http://localhost:8080/api`
 
-  3. Hit **Send** button
+  3. Click on the **Send** button.  
+  
+  4. You should see the `"message": "hooray! your API is working!"` data returned from your API.
 
-7. [Answer key](https://github.com/KansasCityWomeninTechnology/trivia-api/tree/answer-key-part-2)
+7. Click to check your work against the [Part 2 Answer key](https://github.com/KansasCityWomeninTechnology/trivia-api/tree/answer-key-part-2).
