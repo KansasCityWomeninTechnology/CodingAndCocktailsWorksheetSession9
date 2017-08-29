@@ -32,8 +32,6 @@ to an instance of `express` and set `port`
   
   The `process.env.PORT` will be populated by Heroku later when the application is deployed and because we use the `||` to indicate "OR" the code will fallback to `8080` locally when it sees that `process.env.PORT` is not populated locally.
 
-# TODO: Start back here
-
 4. Initiate router  
 
   {% label %}Atom | server.js{% endlabel %}
