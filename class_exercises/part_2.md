@@ -92,21 +92,12 @@ The `process.env.PORT` will be populated by Heroku later when the application is
       });
       ```
 
-5. Fire up your server
+5. Run the application using the `nodemon` script you created in Part 1 so that when you save changes to code, the API will re-run with the changes.
 
-  {% label %}CLI{% endlabel %}
-  ```
-  node server.js
-  ```
-
-  OR use the script
-
-  {% label %}CLI{% endlabel %}
+  {% label %}Git Bash/iTerm2{% endlabel %}
   ```
   npm run nm
   ```
-
-  and any changes to code [when you save], will re-run the API with the changes
 
 6. Open **Postman**
 
