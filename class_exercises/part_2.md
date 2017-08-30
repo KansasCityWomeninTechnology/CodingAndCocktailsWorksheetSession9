@@ -1,4 +1,4 @@
-# Part 2
+# Part 2: Connecting to an API
 
 1. In Atom, right click anywhere on the left side section of the screen where the `trivia-api` folder and the `package.json` file are displayed. 
 

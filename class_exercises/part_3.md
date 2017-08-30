@@ -1,4 +1,4 @@
-# Part 3
+# Part 3: Using API Data
 
 1. In _trivia-api_ directory, create a folder named _app_.
 
