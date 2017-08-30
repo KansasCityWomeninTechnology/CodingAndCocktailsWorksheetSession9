@@ -48,17 +48,31 @@
 
 7. In _app/routes/index.js_, create a variable named `quizRoutes`.
 
-8. Then add the following:
+8. In the same way that you require in packages, you can require in other files from your own project as long as they're exporting something.  Note the `module.exports = apiRouter;` code at the bottom of _app/routes/quiz_routes.js_.
 
+  Set the value of the `quizRoutes` variable to require in the _app/routes/quiz_routes.js_ file.  
+  
+  In order to tell the require statement where to look for the file (in the same directory where the _index.js_ file is located) use `./`. To learn more about file paths read [HTML File Paths on w3schools](https://www.w3schools.com/html/html_filepaths.asp).  File paths are the same across JavaScript, HTML, CSS, and in the command line (Git Bash or iTerm2). 
+  
+  If you're stuck here grab a mentor or open up the hint section below by clicking on the arrow (^) below for more detail.
+
+  <!--sec data-title="Hint" data-id="section0" data-show=true data-collapse=true ces-->
   {% label %}Atom | app/routes/index.js{% endlabel %}
   ```
   var quizRoutes = require('./quiz_routes');
-
-  module.exports = function(app, db) {
-    app.use('/api', quizRoutes);
-    // Other groups of routes could go here some
-  };
   ```
+  <!--endsec-->
+
+9. Now we'll export a function to tell the app to use the `quizRoutes` router for the `/api` route
+
+module.exports = function(app, db) {
+app.use('/api', quizRoutes);
+// Other groups of routes could go here some
+};
+
+
+
+  
 
 7. We need to incorporate our new routes placement in _server.js_.
 
