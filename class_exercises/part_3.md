@@ -1,12 +1,12 @@
 # Part 3: Using API Data
 
-1. In _trivia-api_ directory, create a folder named _app_.
+1. In Atom, right click on the left side Project pane and pick "New Folder".  Name the new folder _app_.
 
-2. In _app_, create a folder named _routes_.
+2. Right click on the newly created _app_ folder and pick "New Folder". The prompt for the folder name should already show `app/`.  Name the new folder _routes_.
 
-3. In _app/routes_, create 2 files: _index.js_ & _quiz_routes.js_.
+3. Right click on the newly created _app/routes_ folder and pick "New File.  Name it _index.js_ & repeat to also create a file named _quiz_routes.js_ in the _app/routes_ folder.
 
-4. Open  _app/routes/quiz_routes.js_ in Atom & add:
+4. In the left side Project pane, double click on the _app/routes/quiz_routes.js_ file to open it for editing and in the file, type: 
 
   {% label %}Atom | app/routes/quiz_routes.js{% endlabel %}
   ```
@@ -17,12 +17,18 @@
 
   module.exports = apiRouter;
   ```
+  
+  Similar to what we did in Part 2, this code is requiring in the express package and creating an instance of the router here.
 
-5. Let's move our original route from _server.js_ to _quiz_routes.js_.
+5. Next, move the original route from _server.js_ to _quiz_routes.js_.
 
-  Copy [& delete] the route you added in _server.js_ and paste it in _quiz_routes.js_ [look for the comment `Replace with route` for where to place it].
+  1. Cut (Windows: `ctrl` + `x`, Mac: `cmd` + `x`) the route you added in _server.js_ (that's the entire `apiRouter.get...` section).
+  
+  2. In _quiz_routes.js_, look for the comment `Replace with route` that you wrote and select it.
+  
+  3. Paste (Windows: `ctrl` + `v`, Mac: `cmd` + `v`) the code that you cut from _server.js_ there.  
 
-  _quiz_routes_ should look like the following:
+  _quiz_routes.js_ should look like the following:
 
   {% label %}Atom | app/routes/quiz_routes.js{% endlabel %}
   ```
@@ -36,9 +42,13 @@
   module.exports = apiRouter;
   ```
 
-  Notice the code is indented and there are blank lines above and below the route, to make the code easier to read.
+  Notice the `res.json` code is indented and there are blank lines above and below the route, to make the code easier to read and maintain.
 
-6. Open  _app/routes/index.js_ in Atom & add the following:
+6. In Atom, double click on the _app/routes/index.js_ file in the left side Project pane to open it.  
+
+7. In _app/routes/index.js_, create a variable named `quizRoutes`.
+
+8. Then add the following:
 
   {% label %}Atom | app/routes/index.js{% endlabel %}
   ```
