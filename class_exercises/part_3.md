@@ -56,34 +56,48 @@
   
   If you're stuck here grab a mentor or open up the hint section below by clicking on the arrow (^) below for more detail.
 
-  <!--sec data-title="Hint" data-id="section0" data-show=true data-collapse=true ces-->
+  <!--sec data-title="Hint #1" data-id="section0" data-show=true data-collapse=true ces-->
   {% label %}Atom | app/routes/index.js{% endlabel %}
   ```
   var quizRoutes = require('./quiz_routes');
   ```
   <!--endsec-->
 
-9. Now we'll export a function to tell the app to use the `quizRoutes` router for the `/api` route
+9. Now we'll export a function to tell the app to use the `quizRoutes` router for the `/api` route.  We'll then be able to import this for use in another area of this application. 
 
-module.exports = function(app, db) {
-app.use('/api', quizRoutes);
-// Other groups of routes could go here some
-};
+  1. With your cursor at the end of the line importing the `quiz_routes` module, press enter twice.
 
+  This will add a blank line to increase the code readability and then give us space to add the next block of code. 
 
-
+  2. Type `module.exports =` This is necessary to export a module (or small block of code) and set it to what you want to export as your module to use in another area of your application. 
   
+   Keeping code modularized allows you to have a clear focus for an individual module, make it easier to see how the application is built, make it easier to troubleshoot, isolate pieces of code from eachother and test areas of code more easily, troubleshoot more easily and keep an application better organized.  Caution: there is some difference in JavaScript written on the server side in Node.js.  `module.exports` is one example that is only available in the server-side Node environment.  This is not natively available in your browser (Google Chrome, Microsoft Edge, Firefox, etc) so without additional tools like Webpack or Browserify you wouldn't see this in client-side/front-end JavaScript code.
+   
+  3. We want to export a function here.  Do you remember what a function structure looks like? Give it a try and then expand the section below by clicking on the arrow (^) to expand the section and check yourself. This function should take two parameters: `app` and `db`. 
+  
+  <!--sec data-title="Hint #2" data-id="section1" data-show=true data-collapse=true ces-->
+  {% label %}Atom | app/routes/index.js{% endlabel %}
+  ```
+  function(app, db) {
 
-7. We need to incorporate our new routes placement in _server.js_.
+  };
+   ```
+  <!--endsec-->
 
-  1. Before the chained methods on `app`, import the new routes folder.
+  4. In the body of that function (that means inside the opening and closing curly braces {}!), type `app.use('/api', quizRoutes);`. 
+  
+  You could also add other groups of routes in this same area but this is all we'll be using in this application.  
+
+10. Now that we've rearranged the routes, we need to incorporate them in _server.js_.
+
+  1. In Atom, open the _server.js_ file.  Before the chained methods on `app`, import the new routes folder on it's own line surrounded by blank lines to help increase readibility.
 
     {% label %}Atom | server.js{% endlabel %}
     ```
     require('./app/routes')(app, {});
     ```
 
-  2. Then we need to remove a couple of things that we now use in _app/routes/index.js_ or _app/routes/quiz_routes.js_. Remove the following lines:
+  2. Next, cleanup a couple of things that we now use in _app/routes/index.js_ or _app/routes/quiz_routes.js_. Remove the following lines:
 
     {% label %}Atom | server.js{% endlabel %}
     ```
@@ -94,23 +108,29 @@ app.use('/api', quizRoutes);
     ```
     .use('/api', apiRouter)
     ```
+    
+  3. Save your files.
 
-8. Use Postman to make sure your route still returns a response at `http://localhost:8080/api` [Make sure node server is still running.]
+11. In Git Bash or iTerm2, make sure your server is still running.  If you need to restart type `npm run nm`.  To cancel hit the `ctrl` + `c` keys.
 
-9. Let's add a new route & serve a static JSON file for the response.
+12. In Postman, make sure your route is still set to `http://localhost:8080/api`, the verb is still set to GET and press the "Send" button.  Make sure you still get a response here.  If you don't get a response, try to troubleshoot or grab a mentor for some help! 
 
-  1. Create a new file in the _app_ folder and name it _quiz_fixture.js_.
+13. Let's add a new route & serve a static JSON file for the response.
 
-  2. Copy all the contents from [this file](https://github.com/KansasCityWomeninTechnology/trivia-api/blob/answer-key-part-3/app/quiz_fixture.js) & paste into _quiz_fixture.js_.
+  1. In Atom, in the left side Project pane, create a new file in the _app_ folder and name it _quiz_fixture.js_.
 
-  3. Import this new file into the _app/routes/quiz_routes.js_ file:
+  2. Copy all the contents from [this linked file](https://github.com/KansasCityWomeninTechnology/trivia-api/blob/answer-key-part-3/app/quiz_fixture.js) & paste that content into _quiz_fixture.js_.
 
+  3. Import this new file into a variable named `sampleQuiz` in the the _app/routes/quiz_routes.js_ file.  If you need further hints open the section below by clicking on the arrow (^) to open.
+
+    <!--sec data-title="Hint #3" data-id="section3" data-show=true data-collapse=true ces-->
     {% label %}Atom | app/routes/quiz_routes.js{% endlabel %}
     ```
     var sampleQuiz = require('./../quiz_fixture.js');
     ```
+  <!--endsec-->
 
-  3. Add this new route to _app/routes/quiz_routes.js_.
+  4. Add this new sample quiz route to _app/routes/quiz_routes.js_ below the root route `/` function with a blank line separating them for readibility.
 
     {% label %}Atom | app/routes/quiz_routes.js{% endlabel %}
     ```
@@ -119,6 +139,6 @@ app.use('/api', quizRoutes);
     });
     ```
 
-10. Use Postman to hit your new endpoint `http://localhost:8080/api/sample`.
+14. In Postman, update your route to the one you just added `http://localhost:8080/api/sample`, the verb should still be set to GET and press the "Send" button.  Make sure you get a response here.  If you don't get a response, try to troubleshoot or grab a mentor for some help! 
 
-11. [Answer Key](https://github.com/KansasCityWomeninTechnology/trivia-api/tree/answer-key-part-3)
+15. Check your code with the [Part 3 Answer Key](https://github.com/KansasCityWomeninTechnology/trivia-api/tree/answer-key-part-3).
