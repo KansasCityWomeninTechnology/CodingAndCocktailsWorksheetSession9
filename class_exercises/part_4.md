@@ -1,19 +1,21 @@
 # Part 4
 
-1. In the _app_ folder, create a new file named _quiz.js_.
+1. In Atom, in the _app_ folder, create a new file named _quiz.js_.
 
-2. Copy the contents [from here](https://github.com/KansasCityWomeninTechnology/trivia-api/blob/answer-key-part-4/app/quiz.js) & paste into your _app/quiz.js_ file.
+2. Copy the contents [from this file on GitHub](https://github.com/KansasCityWomeninTechnology/trivia-api/blob/answer-key-part-4/app/quiz.js) & paste them into the _app/quiz.js_ file.
 
-// TODO: WALK THROUGH CODE OR BREAK IT DOWN INTO MORE STEPS
+  // TODO: WALK THROUGH CODE OR BREAK IT DOWN INTO MORE STEPS
 
-3. Import this file into your _app/routes/quiz_routes.js_.
+3. Import the newly created _quiz_ file into the _app/routes/quiz_routes.js_ file using a variable named `quiz`. Can you remember how to do this? If you need more direction, expand the section below by clicking on the arrow (^).
 
-  {% label %}Atom | app/routes/quiz_routes.js{% endlabel %}
-  ```
-  var quiz = require('./../quiz.js');
-  ```
+  <!--sec data-title="Hint #1" data-id="section4" data-show=true data-collapse=true ces-->
+    {% label %}Atom | app/routes/quiz_routes.js{% endlabel %}
+    ```
+    var quiz = require('./../quiz.js');
+    ```
+  <!--endsec-->
 
-4. Let's add a couple more routes to this file, to use the methods that are in _app/quiz.js_.
+4. Add a couple more routes to _quiz_routes.js_, to use the methods that were created in _app/quiz.js_.
 
   {% label %}Atom | app/routes/quiz_routes.js{% endlabel %}
   ```
@@ -28,7 +30,7 @@
       .getQuiz(req.params)
       .then(function(result){res.json(result);});
   });
-
+  
   apiRouter.get('/category/:category/difficulty/:difficulty/count/:count', function(req, res) {
     quiz
       .getQuiz(req.params)
@@ -36,8 +38,8 @@
   });
   ```
 
-5. Use the form at `https://cocktail-trivia-api.herokuapp.com/` to determine a possible endpoint for your API
+5. In Google Chrome, navigate to [https://cocktail-trivia-api.herokuapp.com](https://cocktail-trivia-api.herokuapp.com/) and fill out the form to create an endpoint, or URL that you can use in Postman to view data returned from your API routes.
 
-6. Use Postman to hit one of your new routes. [Use the path from `/api` on from the previous step to determine an eligible path for your endpoint.
+6. In Postman, ensure the verb is still set to GET, update the route using everything after `/api` in the previous step to hit that route in your for your endpoint.
 
-7. [Answer Key](https://github.com/KansasCityWomeninTechnology/trivia-api/tree/answer-key-part-4)
+7. Check your work with the [Part 4 Answer Key](https://github.com/KansasCityWomeninTechnology/trivia-api/tree/answer-key-part-4).
