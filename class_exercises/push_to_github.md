@@ -11,7 +11,7 @@
     {% hint style='danger' %}
 Make sure **Initialize this repository with a README** is **unchecked**.
 
-    ![](/assets/images/no-readme.PNG)
+![](/assets/images/no-readme.PNG)
   {% endhint %}
 
 3. In Git Bash or iTerm2, initialize the _trivia-api_ directory as local Git repository (aka repo).
