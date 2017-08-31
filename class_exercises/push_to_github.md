@@ -1,4 +1,4 @@
-# Push to GitHub
+# Part 5: Push to GitHub
 
 1. Make sure you have created your GitHub account from [the tools setup](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/user-accounts---github-slack--codecademy.html) and are logged in to [https://github.com](https://github.com/)
 
