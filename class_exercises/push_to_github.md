@@ -38,7 +38,8 @@ For more information on working with remotes read [Git Basics - Working with Rem
 
   1. In Google Chrome on the GitHub site make sure you have your `trivia-api` repository open.
   
-  2. Click on the green **"Clone or download"** button and then the clipboard icon to copy the URL.
+  2. Click on the clipboard icon to copy the URL.
+     ![](/assets/images/gitClone.png)
 
   3. In your Command Line Interface (CLI aka Git Bash or iTerm2), type the following to add the remote
   
