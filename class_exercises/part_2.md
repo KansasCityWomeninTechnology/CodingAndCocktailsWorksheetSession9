@@ -59,10 +59,10 @@ This code is saying that when someone requests the root route (`apiRouter.get('/
 
   1. Ensure there is a blank line between the end of the close of the routing function and your cursor.  Type: 
 
-  {% label %}Atom | server.js{% endlabel %}
-  ```
-  app
-  ```
+    {% label %}Atom | server.js{% endlabel %}
+    ```
+    app
+    ```
   
   2. Enable calling to the API from any origin - remember this is called "CORS.".  
   
@@ -72,23 +72,23 @@ This code is saying that when someone requests the root route (`apiRouter.get('/
     
     3. Type: 
     
-    {% label %}Atom | server.js{% endlabel %}
-    ```
-    .use(cors())
-    ```
+      {% label %}Atom | server.js{% endlabel %}
+      ```
+      .use(cors())
+      ```
     
   3. Tell the application to use the API router for any URL that starts with `/api`.
   
      1. Press enter. Atom should automatically align your indentation with the `.use(cors())` line from above.  This next line should be indented just as far as that line is.  Type:  
 
-      {% label %}Atom | server.js{% endlabel %}
-      ```
-      .use('/api', apiRouter)
-      ```
+        {% label %}Atom | server.js{% endlabel %}
+        ```
+        .use('/api', apiRouter)
+        ```
 
   4. Tell the application which port to listen for API requests on.  `8080` is a common port to use here. Press enter to move to a new line and type: 
     
-    {% label %}Atom | server.js{% endlabel %}
+      {% label %}Atom | server.js{% endlabel %}
       ```
       .listen(port, function() {
         console.log('API Magic happening on port ' + port);
