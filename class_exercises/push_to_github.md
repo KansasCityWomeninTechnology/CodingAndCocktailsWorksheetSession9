@@ -14,23 +14,23 @@ Make sure **Initialize this repository with a README** is **unchecked**.
     ![](/assets/images/no-readme.PNG)
   {% endhint %}
 
-2. In Git Bash or iTerm2, initialize the _trivia-api_ directory as local Git repository (aka repo).
+3. In Git Bash or iTerm2, initialize the _trivia-api_ directory as local Git repository (aka repo).
 
   {% label %}Git Bash/iTerm2{% endlabel %}
   ```
   git init
   ```
 
-3. In Atom, right click in the left side Project pane and choose "**New File**." Name this file _.gitignore_ (**notice the filename starts with a .**) 
+4. In Atom, right click in the left side Project pane and choose "**New File**." Name this file _.gitignore_ (**notice the filename starts with a .**) 
 
-4. Double click on that file in the left side Project pane to open it for editing and in that file type:
+5. Double click on that file in the left side Project pane to open it for editing and in that file type:
 
   {% label %}Atom | .gitignore{% endlabel %}
   ```
   node_modules/
   ```
 
-5. You must connect the repository from GitHub (on the internet) to this repository you now have locally on your computer. This is called adding a remote repository. 
+6. You must connect the repository from GitHub (on the internet) to this repository you now have locally on your computer. This is called adding a remote repository. 
 
   {% hint style='tip' %}
 For more information on working with remotes read [Git Basics - Working with Remotes from the Pro Git book](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes)
@@ -47,41 +47,41 @@ For more information on working with remotes read [Git Basics - Working with Rem
     ```
     git remote add origin https://github.com/<your_github_username>/trivia-api.git
     ```
-    Replace the git URL with the URL you copied from the GitHub site in step 5.i. above.
+    Replace the git URL with the URL you copied from the GitHub site in step 6.i. above.
 
-5. Check which directories/files are unstaged (that Git doesn't yet know about). Type:
+7. Check which directories/files are unstaged (that Git doesn't yet know about). Type:
 
   {% label %}Git Bash/iTerm2{% endlabel %}
   ```
   git status
   ```
 
-6. Stage the files so Git knows which files to be dealing with.  In this case we want all of them so we just add all the files in the current directory: `.`.  Type:
+8. Stage the files so Git knows which files to be dealing with.  In this case we want all of them so we just add all the files in the current directory. The current directory can be referenced as: `.`.  Type:
 
   {% label %}Git Bash/iTerm2{% endlabel %}
   ```
   git add .
   ```
 
-7. Check to ensure all of your files are staged & ready to be committed.
+9. Check to ensure all of your files are staged & ready to be committed.
 
   {% label %}Git Bash/iTerm2{% endlabel %}
   ```
   git status
   ```
 
-8. Commit the files so Git understands the group of changes to deal with.  Feel free to change the commit message (the part in the quotation marks) if you'd like!
+10. Commit the files so Git understands what group of changes to deal with.  Feel free to change the commit message (the part in the quotation marks) if you'd like!
 
   {% label %}Git Bash/iTerm2{% endlabel %}
   ```
   git commit -m "Mom, look, my first API!"
   ```
 
-9. Push these changes up to the GitHub website (your remote/cloud) and set the upstream (original source) to remote's `master` branch. 
+11. Push these changes up to the GitHub website (the origin remote you created in step 6) and set the upstream (`-u` this is the the gatekeeper of the project or the source of truth to which you wish to contribute to) to the remote's `master` branch. 
 
   {% label %}Git Bash/iTerm2{% endlabel %}
   ```
   git push -u origin master
   ```
   
-10. Your API now exists on GitHub!
+12. Your API now exists on GitHub!
