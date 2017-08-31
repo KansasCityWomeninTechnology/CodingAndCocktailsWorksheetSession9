@@ -72,10 +72,10 @@ This code is saying that when someone requests the root route (`apiRouter.get('/
     
     3. Type: 
     
-      {% label %}Atom | server.js{% endlabel %}
-      ```
-      .use(cors())
-      ```
+        {% label %}Atom | server.js{% endlabel %}
+        ```
+        .use(cors())
+        ```
     
   3. Tell the application to use the API router for any URL that starts with `/api`.
   
