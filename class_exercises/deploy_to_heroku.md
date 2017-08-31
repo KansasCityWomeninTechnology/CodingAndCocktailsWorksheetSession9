@@ -1,4 +1,4 @@
-# Deploy to Heroku
+# Part 6: Deploy to Heroku
 
 1. In Google Chrome, navigate to [https://signup.heroku.com](https://signup.heroku.com) and create an account.
 
