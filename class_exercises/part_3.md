@@ -84,6 +84,7 @@ Keeping code modularized allows for:
 * Isolation of pieces of code from eachother
 * Easier testing of specific areas of code  
 
+
 **Caution**: There is some difference in JavaScript written on the server side in Node.js. `module.exports` is one example that is only available in the server-side Node environment.  This is not natively available in your browser (Google Chrome, Microsoft Edge, Firefox, etc) so without additional tools like Webpack or Browserify you wouldn't see this in client-side/front-end JavaScript code.
     {% endhint %}
    
