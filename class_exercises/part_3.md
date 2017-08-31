@@ -133,7 +133,7 @@ Keeping code modularized allows for:
 
   2. Copy all the contents from [this linked file](https://github.com/KansasCityWomeninTechnology/trivia-api/blob/answer-key-part-3/app/quiz_fixture.js) & paste that content into _quiz_fixture.js_.
 
-  3. Import this new file into a variable named `sampleQuiz` in the the _app/routes/quiz_routes.js_ file.  If you need further hints open the section below by clicking on the arrow (^) to open. 
+  3. Import this new file into a variable named `sampleQuiz` in the the _app/routes/quiz_routes.js_ file.  If you need further hints open the section below by clicking on the arrow (^) to open.
   
     <!--sec data-title="Hint #3" data-id="section3" data-show=true data-collapse=true ces-->
       {% label %}Atom | app/routes/quiz_routes.js{% endlabel %}
