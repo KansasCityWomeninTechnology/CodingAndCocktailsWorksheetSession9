@@ -27,6 +27,12 @@ While following along with the worksheet, type out the commands instead of doing
 |Switch between programs on the taskbar| N/A | `windows key` + `tab`|
 |Switch between Chrome windows. |`shift` + `cmd` + `~`| N/A |
 
-# TODO: Fix Tools Image & Add images
+{% hint style='tip' %}
+First time at Coding & Cocktails? 
+[Click here to Install the Tools!](http://bit.ly/CnCTheTools)
+{% endhint %}
 
-[![](/assets/images/glossary.png)](http://bit.ly/CnCgloss) [![](/assets/images/tools.png)](http://bit.ly/CnCTheTools)
+{% hint style='tip' %}
+Don't know a term? 
+[Click here to check out our glossary!](http://bit.ly/CnCgloss)
+{% endhint %}
