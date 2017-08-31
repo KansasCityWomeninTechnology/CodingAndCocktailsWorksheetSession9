@@ -70,12 +70,11 @@ This code is saying that when someone requests the root route (`apiRouter.get('/
     
     2. Press tab to indent the code.  This is a common practice when chaining methods to make it easier to read the code!
     
-    3. Type: 
-    
-        {% label %}Atom | server.js{% endlabel %}
-        ```
-        .use(cors())
-        ```
+    3. Type:
+      {% label %}Atom | server.js{% endlabel %}
+      ```
+      .use(cors())
+      ```
     
   3. Tell the application to use the API router for any URL that starts with `/api`.
   
