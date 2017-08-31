@@ -1,6 +1,6 @@
 # Part 4
 
-1. In Atom, in the _app_ folder, create a new file named _quiz.js_.
+1. In Atom, in left side Project panel, right click on the _app_ folder, and pick "**New File**." Name it _quiz.js_.
 
 2. Copy the contents [from this file on GitHub](https://github.com/KansasCityWomeninTechnology/trivia-api/blob/answer-key-part-4/app/quiz.js) & paste them into the _app/quiz.js_ file.
 
@@ -15,7 +15,7 @@
     ```
   <!--endsec-->
 
-4. Add a couple more routes to _quiz_routes.js_, to use the methods that were created in _app/quiz.js_.
+4. In Atom, add a couple more routes to _quiz_routes.js_ to use the methods that were created in _app/quiz.js_.
 
   {% label %}Atom | app/routes/quiz_routes.js{% endlabel %}
   ```
