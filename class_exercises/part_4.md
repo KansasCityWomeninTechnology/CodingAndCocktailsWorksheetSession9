@@ -1,4 +1,4 @@
-# Part 4
+# Part 4: More API Data
 
 1. In Atom, in left side Project panel, right click on the _app_ folder, and pick "**New File**." Name it _quiz.js_.
 
