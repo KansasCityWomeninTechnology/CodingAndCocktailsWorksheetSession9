@@ -102,6 +102,7 @@ The `process.env.PORT` will be populated by Heroku later when the application is
 6. Open **Postman**
 
   1. Make sure **GET** is selected in the HTTP dropdown.
+    ![](/assets/images/postman.png)
 
   2. In the field that says **Enter request URL**, type: `http://localhost:8080/api`
 
