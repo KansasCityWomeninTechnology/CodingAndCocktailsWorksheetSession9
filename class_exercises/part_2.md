@@ -47,8 +47,9 @@ The `process.env.PORT` will be populated by Heroku later when the application is
     res.json({ message: 'hooray! your API is working!' });
   });
   ```
-  
-  This code is saying that when someone requests the root route (`apiRouter.get('/'`), respond (`res`) with a JavaScript Object Notation formatted piece of data (`.json`) with a key of `message` and a value of `hooray! your API is working!`. 
+  {% hint style='info' %}
+This code is saying that when someone requests the root route (`apiRouter.get('/'`), respond (`res`) with a JavaScript Object Notation formatted piece of data (`.json`) with a key of `message` and a value of `hooray! your API is working!`. 
+  {% endhint %}
   
   {% hint style='tip' %}
 **Challenge!** Grab a mentor and tell them what you would change if you wanted to respond to a user hitting a /data route.
