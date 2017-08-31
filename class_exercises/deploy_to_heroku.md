@@ -5,7 +5,7 @@
 2. Install Heroku CLI.
    Click on the arrow below (^) on the section that corresponds to your Operating System.
    
-  <!--sec data-title="Mac" data-id="mac" data-show=true data-collapse=true ces-->
+  <!--sec data-title="Mac" data-id="section5" data-show=true data-collapse=true ces-->
     Install Heroku CLI via Homebrew.  In iTerm2 type:
    
     {% label %}iTerm2{% endlabel %}
@@ -25,7 +25,7 @@ If you see warnings, grab a mentor to troubleshoot with the information on [the 
     > heroku-cli/6.13.5 (darwin-x64) node-v8.2.1
   <!--endsec-->
 
-  <!--sec data-title="Windows" data-id="windows" data-show=true data-collapse=true ces-->
+  <!--sec data-title="Windows" data-id="section6" data-show=true data-collapse=true ces-->
     [Click here to download the installer](https://cli-assets.heroku.com/heroku-cli/channels/beta/heroku-cli-x64.exe) and run through the install process.
     
     To verify Heroku CLI installation, type: 
