@@ -1,43 +1,40 @@
 # Push to GitHub
 
-1. Make sure you have created your GitHub account and are logged in to [https://github.com](https://github.com/)
+1. Make sure you have created your GitHub account from [the tools setup](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/user-accounts---github-slack--codecademy.html) and are logged in to [https://github.com](https://github.com/)
 
 2. Create a new repository named **trivia-api** on github.com.
 
-  1. Via Github.com website
+  1. In Google chrome, navigate to [https://github.com](https://github.com/)
   
-    In the upper-right corner of any page, click **+**, and then click **New repository**.
+  2. In the upper-right corner, click **+**, and then click **New repository**.
 
     {% hint style='danger' %}
 Make sure **Initialize this repository with a README** is **unchecked**.
 
     ![](/assets/images/no-readme.PNG)
-  {% endhint %}  
+  {% endhint %}
 
-  2. Or via curl
-
-    {% label %}Git Bash/iTerm2{% endlabel %}
-    ```
-    curl -u 'your_github_username' https://api.github.com/user/repos -d "{\"name\":\"trivia-api\"}"
-    ```
-
-    Replace `your_github_username` with your own GitHub username but keep the quotes.
-
-2. Initialize the _trivia-api_ directory as local Git repository (aka repo).
+2. In Git Bash or iTerm2, initialize the _trivia-api_ directory as local Git repository (aka repo).
 
   {% label %}Git Bash/iTerm2{% endlabel %}
   ```
   git init
   ```
 
-3. In Atom, create a _.gitignore_ file in the root directory of the project and in that file type:
+3. In Atom, right click in the left side Project pane and choose "**New File**." Name this file _.gitignore_ (**notice the filename starts with a .**) 
+
+4. Double click on that file in the left side Project pane to open it for editing and in that file type:
 
   {% label %}Atom | .gitignore{% endlabel %}
   ```
   node_modules/
   ```
 
-4. You must connect the repository from GitHub to this repository you now have locally on your computer. This is called adding a remote repository. 
+5. You must connect the repository from GitHub (on the internet) to this repository you now have locally on your computer. This is called adding a remote repository. 
+
+  {% hint style='tip' %}
+For more information on working with remotes read [Git Basics - Working with Remotes from the Pro Git book](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes)
+  {% endhint %}
 
   1. In Google Chrome on the GitHub site make sure you have your `trivia-api` repository open.
   

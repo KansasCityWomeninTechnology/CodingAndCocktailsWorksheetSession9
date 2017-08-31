@@ -2,9 +2,40 @@
 
 1. In Google Chrome, navigate to [https://signup.heroku.com](https://signup.heroku.com) and create an account.
 
-2. Download & Install [Heroku CLI](https://devcenter.heroku.com/articles/heroku-cli)
+2. Install Heroku CLI.
+   Click on the arrow below (^) on the section that corresponds to your Operating System.
+   
+  <!--sec data-title="Mac" data-id="mac" data-show=true data-collapse=true ces-->
+    Install Heroku CLI via Homebrew.  In iTerm2 type:
+   
+    {% label %}iTerm2{% endlabel %}
+    ```
+    brew install heroku
+    ```
+    {% hint style='danger' %}
+If you see warnings, grab a mentor to troubleshoot with the information on [the heroku website](https://devcenter.heroku.com/articles/heroku-cli#macos-homebrew)
+    {% endhint %}
+    
+    To verify Heroku CLI installation type:
+    {% label %}iTerm2{% endlabel %}
+    ```
+    heroku --version
+    ```
+    This should display a message similar to the following:
+    > heroku-cli/6.13.5 (darwin-x64) node-v8.2.1
+  <!--endsec-->
 
-  Windows devices you'll likely want to choose the 64-bit link unless you have an ancient computer.  Grab a mentor if you're unsure which link to click!
+  <!--sec data-title="Windows" data-id="windows" data-show=true data-collapse=true ces-->
+    [Click here to download the installer](https://cli-assets.heroku.com/heroku-cli/channels/beta/heroku-cli-x64.exe) and run through the install process.
+    
+    To verify Heroku CLI installation, type: 
+    {% label %}Git Bash{% endlabel %}
+    ```
+    heroku --version
+    ```
+    This should display a message similar to the following:
+    > heroku-cli/6.13.5 (darwin-x64) node-v8.2.1
+  <!--endsec-->
 
 3. In Git Bash or iTerm2, login to Heroku with the Heroku CLI
 
@@ -16,16 +47,18 @@
   
   > Logged in as email@example.com
 
-4. Create a new empty application on Heroku.
+4. Create a new empty application on Heroku to use for the API.
 
-  Replace **name** with a name for your application. The **name** will be the subdomain in your application's URL: **http://name.herokuapp.com**
+  Replace **app-name** with a name for your application. The **app-name** will be the subdomain in your application's URL: **http://app-name.herokuapp.com**
 
   {% label %}Git Bash/iTerm2{% endlabel %}
   ```
-  heroku create name
+  heroku create app-name
   ```
+  
+  This command creates the application on Heroku, creates a remote Git repository (repo) for the Heroku application & set that repo as a remote named `heroku`. 
 
-5. The previous command created the application on Heroku, created a remote repo for the Heroku application & set it as a remote named **heroku**. You should have 2 remotes now, `heroku` and `origin`, each with a (fetch) and a (push).  In Git Bash or iTerm2, to confirm the remotes type:
+5. You should have 2 remotes now, `heroku` and `origin`, each with a (fetch) and a (push). To confirm the remotes, in Git Bash or iTerm2, type:
 
   {% label %}Git Bash/iTerm2{% endlabel %}
   ```
