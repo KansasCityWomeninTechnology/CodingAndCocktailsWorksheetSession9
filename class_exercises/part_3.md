@@ -105,20 +105,17 @@ Keeping code modularized allows for:
 
 10. Now that we've rearranged the routes, we need to incorporate them in _server.js_.
 
-  1. In Atom, open the _server.js_ file.  Before the chained methods on `app`, import the new routes folder on it's own line surrounded by blank lines to help increase readibility.
-  
+  1. In Atom, open the _server.js_ file.  Before the chained methods on `app`, import the new routes folder on it's own line surrounded by blank lines to help increase readability. 
     {% label %}Atom | server.js{% endlabel %}
     ```
     require('./app/routes')(app, {});
     ```
 
   2. Next, cleanup a couple of things that we now use in _app/routes/index.js_ or _app/routes/quiz_routes.js_. Remove the following lines:
-  
     {% label %}Atom | server.js{% endlabel %}
     ```
     var apiRouter = express.Router();
     ```
-    
     {% label %}Atom | server.js{% endlabel %}
     ```
     .use('/api', apiRouter)
