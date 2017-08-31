@@ -50,7 +50,9 @@ The `process.env.PORT` will be populated by Heroku later when the application is
   
   This code is saying that when someone requests the root route (`apiRouter.get('/'`), respond (`res`) with a JavaScript Object Notation formatted piece of data (`.json`) with a key of `message` and a value of `hooray! your API is working!`. 
   
-  !Challenge! Grab a mentor and tell them what you would change if you wanted to respond to a user hitting a /data route.
+  {% hint style='tip' %}
+**Challenge!** Grab a mentor and tell them what you would change if you wanted to respond to a user hitting a /data route.
+  {% endhint %}
 
 4. Next you'll configure the application by adding several methods to it.  This is called "chaining."
 
