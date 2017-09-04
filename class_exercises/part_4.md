@@ -4,7 +4,27 @@
 
 2. Copy the contents [from this file on GitHub](https://github.com/KansasCityWomeninTechnology/trivia-api/blob/answer-key-part-4/app/quiz.js) & paste them into the _app/quiz.js_ file.
 
-  // TODO: WALK THROUGH CODE OR BREAK IT DOWN INTO MORE STEPS
+  {% hint style='info' %}
+#### Let's walk through this code a bit!
+  
+The first object (set to the variable `categoryMap` is simply a mapping of quiz category name to a number for later use.
+  
+Next, we require in a couple packages to use - `node-fetch` and `lodash`
+
+Next we create three functions:
+
+  1. `getQuiz`
+      C reates the trivia URL to use and stores that into a variable.  Then makes a call to that URL using the `fetch` package, gets the response in JSON (JavaScript Object Notation) format, and sends that result to get reformatted into the response format that we want to use for our quiz. 
+  
+  2. `getTriviaURL` - 
+      First logs data to the console: 
+      * The count of questions to return
+      * The category to get questions for
+      * The difficulty level to use for this quiz
+      Then the function builds out the correct URL to use including these options and returns the URL to the caller.
+  
+  3. `reformatQA` 
+  {% endhint %}
 
 3. Import the newly created _quiz_ file into the _app/routes/quiz_routes.js_ file using a variable named `quiz`. Can you remember how to do this? If you need more direction, expand the section below by clicking on the arrow (^).
 
