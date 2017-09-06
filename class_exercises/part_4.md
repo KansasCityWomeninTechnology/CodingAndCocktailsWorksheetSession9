@@ -13,21 +13,20 @@ Next, we require in a couple packages to use - `node-fetch` and `lodash`
 
 Next we create three functions:
 
-  1. `getQuiz` - 
+  1. `getQuiz` - Gets the data to use as our quiz.
       1. Calls the function that creates the trivia URL to use and stores that into a variable.  
       2. Makes a request to that URL using the [`node-fetch` package](https://www.npmjs.com/package/node-fetch)
       3. Gets the response in JSON (JavaScript Object Notation) format
       4. Sends that result to change the data format into the response format that we want to use for our quiz. 
   
-  2. `getTriviaURL` - 
+  2. `getTriviaURL` - Builds the URL for the quiz we've specified.
       1. First logs data to the console: 
         * The count of questions to return
         * The category to get questions for
         * The difficulty level to use for this quiz
       2. Then the function builds out the correct URL to use including these options and returns the URL to the caller.
   
-  3. `reformatQA` - 
-      Accepts one data format and transforms it into another
+  3. `reformatQA` - Accepts one data format and transforms it into another.
       1. The map method applies a function to each piece of data passed in
       2. Sets up the incorrect answers to have a `correct` value of `false` and a `text` of the `answer`
       3. Adds the correct answers with a `correct` value of `true` and a `text` of the `correct_answer`
