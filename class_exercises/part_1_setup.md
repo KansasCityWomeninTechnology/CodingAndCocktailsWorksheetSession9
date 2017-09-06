@@ -113,12 +113,12 @@ If Atom doesn't open (but you know it's installed), your system likely doesn't r
 You can configure your system to recognize the command (ask a mentor for help) or you can follow these steps to open it manually:
   1. From your applications or start menu, open Atom
   2. In Atom: File >> Open... (Mac) or Open Folder... (Windows)
-  3. Open the packagesproject folder
+  3. Open the _trivia-api_ folder
   4. Click the Open button
   {% endhint %}
 
-7. Add an npm script to enable you run nodemon quickly in the command line.  To add an npm script it must go inside the curly braces after the `scripts` label.
-  * At the end of the line that starts with the `"test":` key, add a comma `,`
+7. Add an npm script to enable you to run nodemon quickly in the command line.  To add an npm script it must go inside the curly braces after the `scripts` label.
+  * At the end of the line that starts with the `"test":` key, add a comma `,` and then hit enter to move to the next line.
   * On the next line, type out the following to add the nodemon script:
 
   {% label %}Atom | package.json{% endlabel %}
