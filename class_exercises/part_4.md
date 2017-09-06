@@ -5,7 +5,7 @@
 2. Copy the contents [from this file on GitHub](https://github.com/KansasCityWomeninTechnology/trivia-api/blob/answer-key-part-4/app/quiz.js) & paste them into the _app/quiz.js_ file.
 
   {% hint style='info' %}
-#### Let's walk through this code a bit!
+##### Let's walk through this code!
   
 The first object (set to the variable `categoryMap` is simply a mapping of quiz category name to a number for later use.
   
@@ -13,8 +13,11 @@ Next, we require in a couple packages to use - `node-fetch` and `lodash`
 
 Next we create three functions:
 
-  1. `getQuiz`
-      C reates the trivia URL to use and stores that into a variable.  Then makes a call to that URL using the `fetch` package, gets the response in JSON (JavaScript Object Notation) format, and sends that result to get reformatted into the response format that we want to use for our quiz. 
+  1. `getQuiz` - 
+      * Calls the function that creates the trivia URL to use and stores that into a variable.  
+      * Makes a request to that URL using the [`node-fetch` package](https://www.npmjs.com/package/node-fetch)
+      * Gets the response in JSON (JavaScript Object Notation) format
+      * Sends that result to change the data format into the response format that we want to use for our quiz. 
   
   2. `getTriviaURL` - 
       First logs data to the console: 
@@ -23,7 +26,12 @@ Next we create three functions:
       * The difficulty level to use for this quiz
       Then the function builds out the correct URL to use including these options and returns the URL to the caller.
   
-  3. `reformatQA` 
+  3. `reformatQA` - 
+      * Accepts one data format
+      * The map method applies a function to each piece of data passed in
+      * Sets up the incorrect answers to have a `correct` value of `false` and a `text` of the `answer`
+      * adds the correct answers with a `correct` value of `true` and a `text` of the `correct_answer`
+      * Returns an object of the question `text` and uses the `shuffle` method from the `lodash` library to change the order of the answers to show as options.
   {% endhint %}
 
 3. Import the newly created _quiz_ file into the _app/routes/quiz_routes.js_ file using a variable named `quiz`. Can you remember how to do this? If you need more direction, expand the section below by clicking on the arrow (^).
