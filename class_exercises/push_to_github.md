@@ -14,7 +14,7 @@ Make sure **Initialize this repository with a README** is **unchecked**.
 ![](/assets/images/no-readme.PNG)
   {% endhint %}
 
-3. In Git Bash or iTerm2, initialize the _trivia-api_ directory as local Git repository (aka repo).
+3. In Git Bash or iTerm2, initialize the _trivia-api_ directory as a local Git repository (aka repo).
 
   {% label %}Git Bash/iTerm2{% endlabel %}
   ```
@@ -56,7 +56,7 @@ For more information on working with remotes read [Git Basics - Working with Rem
   git status
   ```
 
-8. Stage the files so Git knows which files to be dealing with.  In this case we want all of them so we just add all the files in the current directory. The current directory can be referenced as: `.`.  Type:
+8. Stage the files so Git knows which files to deal with.  In this case we want all of them so we just add all the files in the current directory. The current directory can be referenced as: `.`.  Type:
 
   {% label %}Git Bash/iTerm2{% endlabel %}
   ```
