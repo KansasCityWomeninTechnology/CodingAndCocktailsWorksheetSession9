@@ -67,6 +67,6 @@ Next we create three functions:
 
 5. In Google Chrome, navigate to [https://cocktail-trivia-api.herokuapp.com](https://cocktail-trivia-api.herokuapp.com/) and fill out the form to create an endpoint, or URL that you can use in Postman to view data returned from your API routes.
 
-6. In Postman, ensure the verb is still set to GET, update the route using everything after `/api` in the previous step to hit that route in your for your endpoint.
+6. In Postman, ensure the verb is still set to GET, update the route using everything after `/api` in the previous step to hit that route for your endpoint.
 
 7. Check your work with the [Part 4 Answer Key](https://github.com/KansasCityWomeninTechnology/trivia-api/tree/answer-key-part-4).

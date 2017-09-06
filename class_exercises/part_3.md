@@ -4,7 +4,7 @@
 
 2. Right click on the newly created _app_ folder and pick "New Folder". The prompt for the folder name should already show `app/`.  Name the new folder _routes_.
 
-3. Right click on the newly created _app/routes_ folder and pick "New File.  Name it _index.js_ & repeat to also create a file named _quiz_routes.js_ in the _app/routes_ folder.
+3. Right click on the newly created _app/routes_ folder and pick "New File".  Name it _index.js_ & repeat to also create a file named _quiz_routes.js_ in the _app/routes_ folder.
 
 4. In the left side Project pane, double click on the _app/routes/quiz_routes.js_ file to open it for editing and in the file, type: 
 
@@ -36,7 +36,7 @@
     var apiRouter = express.Router();
 
     apiRouter.get('/', function(req, res) {
-      res.json({ message: 'hooray! your API is working!' });
+        res.json({ message: 'hooray! your API is working!' });
     });
 
     module.exports = apiRouter;
