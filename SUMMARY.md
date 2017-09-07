@@ -1,6 +1,7 @@
 # Summary
 
 * [Overview](README.md)
+* [Prep Work](prep-work.md)
 * [Part 1: Initialize the Project](class_exercises/part_1_setup.md)
 * [Part 2: Connecting to an API](class_exercises/part_2.md)
 * [Part 3: Using API Data](class_exercises/part_3.md)
