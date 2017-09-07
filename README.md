@@ -1,7 +1,7 @@
 <div>
     <img src="/assets/images/logo.png" style="float: left; margin: 0px 15px 15px 0px; height:125px;">
-    <h2 style="display:inline-block;margin-top:1em;">Coding &amp; Cocktails Session 9:</h1>
-    <h3 style="margin-top:0;margin-bottom:2em;">Server-side APIs: Node.js, REST & SOAP</h2>
+    <h2 style="display:inline-block;margin-top:1em;">Coding &amp; Cocktails Session 9:</h2>
+    <h3 style="margin-top:0;margin-bottom:2em;">Server-side APIs: Node.js, REST & SOAP</h3>
 </div>
 <hr>
 
