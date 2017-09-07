@@ -9,4 +9,5 @@
 * [Part 5: Push to Github](class_exercises/push_to_github.md)
 * [Part 6: Deploy to Heroku](class_exercises/deploy_to_heroku.md)
 * [Survey](survey.md)
+* [Reference: Helpful Keyboard Shortcuts](reference-helpful-keyboard-shortcuts.md)
 

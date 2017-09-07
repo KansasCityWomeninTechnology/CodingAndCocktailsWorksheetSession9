@@ -12,21 +12,6 @@ Tonight you learned about what an Application Programming Interface (API) is and
 While following along with the worksheet, type out the commands instead of doing a copy & paste (_unless instructed to copy & paste_) to avoid inadvertently using any incorrect characters.
 {% endhint %}
 
-### Helpful Keyboard Shortcuts
-|Command|Mac Key Combination|Windows Key Combination|
-|--|--|--|
-|Cut|`cmd` + `x`|`ctrl` + `x`|
-|Copy|`cmd` + `c`|`ctrl` + `c`|
-|Paste|`cmd` + `v`|`ctrl` + `v`|
-|Undo|`cmd` + `z`|`ctrl` + `z`|
-|Redo|`cmd` + `y`|`ctrl` + `y`|
-|Save|`cmd` + `s`|`ctrl` + `s`|
-|Select all|`cmd` + `a`|`ctrl` + `a`|
-|Find|`cmd` + `f`|`ctrl` + `f`|
-|Switch between open apps/programs |`cmd` + `tab`|`alt` + `tab`|
-|Switch between programs on the taskbar| N/A | `windows key` + `tab`|
-|Switch between Chrome windows. |`shift` + `cmd` + `~`| N/A |
-
 {% hint style='tip' %}
 First time at Coding & Cocktails? 
 [Click here to Install the Tools!](http://bit.ly/CnCTheTools)
