@@ -119,8 +119,8 @@ If you joined us in May or August, you might have installed Node.js & **npm**, b
  {% hint style='tip' %}
 
  To make the terminal section bigger, hover over the top line of the terminal section with your mouse - it will change to an up-down arrow icon and then you can drag up which will also make the file editing area smaller.
-
- ![](../images/c9_terminal.png)
+ 
+ ![](assets/images/c9_terminal.png)
 
  {% endhint %}
 
