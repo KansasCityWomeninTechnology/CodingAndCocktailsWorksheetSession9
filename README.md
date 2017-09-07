@@ -13,15 +13,11 @@ While following along with the worksheet, type out the commands instead of doing
 {% endhint %}
 
 {% hint style='tip' %}
-First time at Coding & Cocktails? 
-
-[Click here to Install the Tools!](http://bit.ly/CnCTheTools)
+First time at Coding & Cocktails?   [Click here to Install the Tools!](http://bit.ly/CnCTheTools)
 {% endhint %}
 
 {% hint style='tip' %}
-Don't know a term? 
-
-[Click here to check out our glossary!](http://bit.ly/CnCgloss)
+Don't know a term?   [Click here to check out our glossary!](http://bit.ly/CnCgloss)
 {% endhint %}
 
 {% hint style='tip' %}
