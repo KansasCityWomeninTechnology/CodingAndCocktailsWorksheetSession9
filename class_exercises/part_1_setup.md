@@ -2,12 +2,6 @@
 
 ## Setup
 
-{% hint style='danger' %}
-
-If this is your first time joining us for Coding & Cocktails, you'll want to [install our tools](http://bit.ly/CnCTools) before you go any further.
-
-{% endhint %}
-
 1. In your Command Line Interface (aka CLI: That means Git Bash or iTerm2), navigate to your _CodingAndCocktails_ folder by typing: 
 
   {% label %}iTerm2/Git Bash{% endlabel %}
@@ -48,6 +42,12 @@ If this is your first time joining us for Coding & Cocktails, you'll want to [in
 If you start typing the name of a folder or file, hit tab and it will autocomplete.  
 
 Above if you had typed `cd tri` and then hit tab it would have completed to `cd trivia-api` for you!
+  {% endhint %}
+  
+4. Download and install [Postman](https://www.getpostman.com/apps). Select the Download button in the section for your Operating System (Mac or Windows). 
+
+  {% hint style='danger' %}
+Cloud9 users instead of downloading Postman you'll need to use the [Chrome extension](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en).
   {% endhint %}
   
 ## package.json

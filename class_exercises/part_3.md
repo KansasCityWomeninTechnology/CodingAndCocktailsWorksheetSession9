@@ -2,7 +2,7 @@
 
 1. In Atom, right click on the left side Project pane and pick "New Folder".  Name the new folder _app_.
 
-2. Right click on the newly created _app_ folder and pick "New Folder". The prompt for the folder name should already show `app/`.  Name the new folder _routes_.
+2. Right click on the newly created _app_ folder and pick "New Folder". The prompt for the folder name should already show `app/` (Mac) or `app\` (Windows).  Name the new folder _routes_.
 
 3. Right click on the newly created _app/routes_ folder and pick "New File".  Name it _index.js_ & repeat to also create a file named _quiz_routes.js_ in the _app/routes_ folder.
 
@@ -93,7 +93,7 @@ Keeping code modularized allows for:
     <!--sec data-title="Hint #2" data-id="section1" data-show=true data-collapse=true ces-->
       {% label %}Atom | app/routes/index.js{% endlabel %}
       ```
-      function(app, db) {
+      module.exports = function(app, db) {
 
       };
        ```
