@@ -82,7 +82,7 @@ If you were here last month, you might remember the _package.json_ and talking a
 
   {% label %}Git Bash/iTerm2{% endlabel %}
   ```
-  npm install cors express lodash node-fetch
+  npm install cors express lodash node-fetch --save-dev
   ```
   {% hint style='info' %}
 For additional context on the packages being used take a look at their pages on the npm website:
@@ -92,7 +92,7 @@ For additional context on the packages being used take a look at their pages on 
   * node-fetch: https://www.npmjs.com/package/node-fetch
   {% endhint %}
 
-5. Install the `nodemon` package as a dev dependency. This package will allow you to restart your server when files change without having to manually do so. Type:
+2. Install the `nodemon` package as a dev dependency. This package will allow you to restart your server when files change without having to manually do so. Type:
 
   {% label %}Git Bash/iTerm2{% endlabel %}
   ```
@@ -105,7 +105,7 @@ DevDepencency: A tool that is used only during the development of your project. 
 Dependency: A tool or piece of code that is required to make your application work.
   {% endhint %}
 
-6. Open Atom via the command line
+3. Open Atom via the command line
 
   {% label %}Git Bash/iTerm2{% endlabel %}
   ```
@@ -123,7 +123,9 @@ You can configure your system to recognize the command (ask a mentor for help) o
   4. Click the Open button
   {% endhint %}
 
-7. Add an npm script to enable you to run nodemon quickly in the command line.  To add an npm script it must go inside the curly braces after the `scripts` label.
+4. Double click on the _package.json_ file in the left side Project pane to open the file for editing.
+
+5. Add an npm script to enable you to run nodemon quickly in the command line.  To add an npm script it must go inside the curly braces after the `scripts` label.
   * At the end of the line that starts with the `"test":` key, add a comma `,` and then hit enter to move to the next line.
   * On the next line, type out the following to add the nodemon script:
 
