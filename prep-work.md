@@ -6,7 +6,7 @@ If this is your first time joining us for Coding & Cocktails, you'll want to [in
 
 {% endhint %}
 
-### 1. <a href="slack://channel?team=T06BZHS4U&id=C0BGBKGG6">Open Slack</a>
+### 1. <a href="slack://channel?team=T06BZHS4U&id=C0BGBKGG6">Click Here to Open Slack</a>
 
 If you have a tip that helped you with a step on the worksheet, you can easily share it with the group in Slack. Or if there are any issues with the worksheet [we make typos or there's an update to a tool that we didn't catch before the session], we may post updates in Slack. Plus, after class is over, Slack becomes a tool for you to gain access to mentors as you go through the homework, or any other questions that arise.
 
@@ -92,7 +92,7 @@ If you joined us in May or August, you might have installed Node.js & **npm**, b
 
    2. If your version is less than **5**, update to the latest by typing: `npm install npm -g`
 
-<!--sec data-title="Chromebooks Only: Cloud9 Instructions" data-id="section0" data-show=true data-collapse=true ces-->
+<!--sec data-title="Chromebooks Only: Cloud9 Instructions" data-id="section0" data-show=true data-collapse=true ces id="chromebook"-->
 
 1. Sign up for an account at [c9.io](https://c9.io)
 
