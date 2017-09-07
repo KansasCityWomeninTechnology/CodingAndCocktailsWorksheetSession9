@@ -37,15 +37,38 @@ If you see warnings, grab a mentor to troubleshoot with the information on [the 
     > heroku-cli/6.13.5 (darwin-x64) node-v8.2.1
   <!--endsec-->
 
-3. In Git Bash or iTerm2, login to Heroku with the Heroku CLI
+3. Login to Heroku: 
 
-  {% label %}Git Bash/iTerm2{% endlabel %}
-  ```
-  heroku login
-  ```
-  You will be prompted for your email address and password that you signed up for Heroku with. If this is successful you will be shown the following message: 
+<!--sec data-title="Windows" data-id="section7" data-show=true data-collapse=true ces-->
+    1. In Git Bash type: `start cmd` [opens current working directory in cmd.exe]
+    
+    2. In cmd.exe, type:
+    
+    {% label %}cmd.exe{% endlabel %}
+    ```
+    heroku login
+    ```
+    
+    You will be prompted for your email address and password that you signed up for Heroku with. If this is successful you will be shown the following message: 
   
   > Logged in as email@example.com
+
+    3. Close cmd.exe & go back to Git Bash
+<!--endsec-->
+
+
+<!--sec data-title="Mac" data-id="section8" data-show=true data-collapse=true ces-->
+    1. In iTerm2, login to Heroku with the Heroku CLI
+
+       {% label %}iTerm2{% endlabel %}
+       ```
+       heroku login
+       ```
+    
+      You will be prompted for your email address and password that you signed up for Heroku with. If this is successful you will be shown the following message: 
+  
+      > Logged in as email@example.com
+<!--endsec-->
 
 4. Create a new empty application on Heroku to use for the API.
 
