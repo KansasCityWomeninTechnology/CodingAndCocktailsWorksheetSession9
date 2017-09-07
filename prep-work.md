@@ -21,7 +21,7 @@ If you're using a Chromebook, skip down to the Cloud9 instructions at the bottom
 
 {% hint style='danger' %}
 
-If you joined us in May, you might have installed Node.js & **npm**, but you'll still want to update to the latest version of **npm**. There have been some new features added to **npm** in the last couple of months, and we'll be using some of them tonight.
+If you joined us in May or August, you might have installed Node.js & **npm**, but you'll still want to update to the latest version of Node.js & **npm**.
 
 {% endhint %}
 
@@ -37,7 +37,7 @@ If you joined us in May, you might have installed Node.js & **npm**, but you'll 
 
 2.  In your CLI, type: `node --version`
 
-    Do you get a version number [_Version **6.11 or greater** required._]?
+    Do you get a version number [_Version **8 or greater** required._]?
 
     1. No version number [something like `node: command not found`]. You need to install Node.
 
@@ -47,23 +47,23 @@ If you joined us in May, you might have installed Node.js & **npm**, but you'll 
 
       2. When that finishes, type: `brew install node`
 
-      3. Confirm `node --version` returns a version **6.11 or greater**.
+      3. Confirm `node --version` returns a version **8 or greater**.
 
       <!--endsec-->
 
       <!--sec data-title="Windows - Install Node" data-id="sectionInstallWindows" data-show=true data-collapse=true ces-->
 
-      1. [Download](https://nodejs.org/en/) the **Current** installer for Windows [v.8.3.0].
+      1. [Download](https://nodejs.org/en/) the **Current** installer for Windows [v.8.4.0].
 
       2. Double-click on the downloaded file & follow the installation prompts.
 
-      3. When that finishes, confirm `node --version` returns a version **6 or greater**.
+      3. When that finishes, confirm `node --version` returns a version **8 or greater**.
 
       <!--endsec-->
 
-    2. If your version number is **6.11 or greater**, proceed to Step 3.
+    2. If your version number is **8 or greater**, proceed to Step 3.
 
-    3. If your version number is less than **6.11**, you'll need to update Node.
+    3. If your version number is less than **8**, you'll need to update Node.
 
       <!--sec data-title="Mac - Update Node" data-id="sectionUpdateMac" data-show=true data-collapse=true ces-->
 
@@ -71,17 +71,17 @@ If you joined us in May, you might have installed Node.js & **npm**, but you'll 
 
       2. When that finishes, type: `brew upgrade node`
 
-      3. Confirm `node --version` returns a version **6.11 or greater**.
+      3. Confirm `node --version` returns a version **8 or greater**.
 
       <!--endsec-->
 
       <!--sec data-title="Windows - Update Node" data-id="sectionUpdateWindows" data-show=true data-collapse=true ces-->
 
-      1. [Download](https://nodejs.org/en/) the **Current** installer for Windows [v.8.3.0].
+      1. [Download](https://nodejs.org/en/) the **Current** installer for Windows [v.8.4.0].
 
       2. Double-click on the downloaded file & follow the installation prompts.
 
-      3. When that finishes, confirm `node --version` returns a version **6 or greater**.
+      3. When that finishes, confirm `node --version` returns a version **8 or greater**.
 
       <!--endsec-->  
 
@@ -108,13 +108,13 @@ If you joined us in May, you might have installed Node.js & **npm**, but you'll 
 
 6. Leave your workspace as **Public**.
 
-7. In the template section leave **HTML5** selected.
+7. In the template section select the Node.js option.
 
 8. Click on the **Create Workspace** button.
 
   Cloud9 will take a minute and create your workspace here.
 
-9. We need to update the version of Node.js that Cloud9 uses by default. We'll use a tool called **Node Version Manager** to install version 8. In the terminal section of your workspace, type: `nvm install 8`
+9. We need to update the version of Node.js that Cloud9 uses by default. We'll use a tool called **Node Version Manager** to use version 8. In the terminal section of your workspace, type: `nvm use 8`
 
  {% hint style='tip' %}
 
