@@ -24,10 +24,10 @@ Next we create three functions:
         * The count of questions to return
         * The category to get questions for
         * The difficulty level to use for this quiz
-      2. Then the function builds out the correct URL to use including these options and returns the URL to the caller.
+      2. Then the function builds out the correct URL using the initial `categoryMap` data and the count/category/difficulty options to return the URL to the caller.
   
   3. `reformatQA` - Accepts one data format and transforms it into another.
-      1. The map method applies a function to each piece of data passed in
+      1. The map method applies a function to each piece of data passed in to the function
       2. Sets up the incorrect answers to have a `correct` value of `false` and a `text` of the `answer`
       3. Adds the correct answers with a `correct` value of `true` and a `text` of the `correct_answer`
       4. Returns an object of the question `text` and uses the `shuffle` method from the `lodash` library to change the order of the answers to show as options.
