@@ -33,7 +33,7 @@ Next we create three functions:
       4. Returns an object of the question `text` and uses the `shuffle` method from the `lodash` library to change the order of the answers to show as options.
   {% endhint %}
 
-3. Import the newly created _quiz_ file into the _app/routes/quiz_routes.js_ file using a variable named `quiz`. Can you remember how to do this? If you need more direction, expand the section below by clicking on the arrow (^).
+3. Import the newly created _quiz.js_ file into the _app/routes/quiz_routes.js_ file using a variable named `quiz`. Can you remember how to do this? If you need more direction, expand the section below by clicking on the arrow (^).
 
   <!--sec data-title="Hint #1" data-id="section4" data-show=true data-collapse=true ces-->
     {% label %}Atom | app/routes/quiz_routes.js{% endlabel %}
@@ -68,5 +68,7 @@ Next we create three functions:
 5. In Google Chrome, navigate to [https://cocktail-trivia-api.herokuapp.com](https://cocktail-trivia-api.herokuapp.com/) and fill out the form to create an endpoint, or URL that you can use in Postman to view data returned from your API routes.
 
 6. In Postman, ensure the verb is still set to GET, update the route using everything after `/api` in the previous step to hit that route for your endpoint.
+
+  For example, if you choose "Music", "Easy" and 10 your generated URL would look like: `//cocktail-trivia-api.herokuapp.com/api/category/entertainment-music/difficulty/easy`.  You would take `/category/entertainment-music/difficulty/easy` and tack it onto the end of your `http://localhost.com:8080/api` URL to make your request to ``
 
 7. Check your work with the [Part 4 Answer Key](https://github.com/KansasCityWomeninTechnology/trivia-api/tree/answer-key-part-4).
