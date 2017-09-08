@@ -129,11 +129,11 @@ Keeping code modularized allows for:
 
   <!--sec data-title="Chromebooks Only: Cloud9 Instructions" data-id="sectionPostman9" data-show=true data-collapse=true ces-->
 
-  1. If you still have your tab open, just go to it and refresh the page to ensure your data still shows.
+1. If you still have your tab open, just go to it and refresh the page to ensure your data still shows.
   
-  2. If you need to re-open your application, open a new tab and navigate to http://< your-workspace-name-yourusername>.c9users.io:8080/api
+2. If you need to re-open your application, open a new tab and navigate to http://< your-workspace-name-yourusername>.c9users.io:8080/api
   
-  3. You should see the `"message": "hooray! your API is working!"` data returned from your API in the browser screen
+3. You should see the `"message": "hooray! your API is working!"` data returned from your API in the browser screen
   <!--endsec-->
   
 13. Let's add a new route & serve a static JSON file for the response.
