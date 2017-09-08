@@ -58,18 +58,18 @@ If you see warnings, grab a mentor to troubleshoot with the information on [the 
     3. Close cmd.exe & go back to Git Bash
   <!--endsec-->
 
-
   <!--sec data-title="Mac & Cloud9/Chromebooks" data-id="section8" data-show=true data-collapse=true ces-->
-    1. In iTerm2/Cloud9 Terminal, login to Heroku with the Heroku CLI
 
-       {% label %}iTerm2/Cloud9 Terminal{% endlabel %}
-       ```
-       heroku login
-       ```
-    
-      You will be prompted for your email address and password that you signed up for Heroku with. If this is successful you will be shown the following message: 
+  1. In iTerm2/Cloud9 Terminal, login to Heroku with the Heroku CLI
   
-      > Logged in as youremail@example.com
+    {% label %}iTerm2/Cloud9 Terminal{% endlabel %}
+    ```
+    heroku login
+    ```
+    
+    You will be prompted for your email address and password that you signed up for Heroku with. If this is successful you will be shown the following message:
+    
+    > Logged in as youremail@example.com
   <!--endsec-->
 
 4. Create a new empty application on Heroku to use for the API.
