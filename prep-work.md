@@ -6,7 +6,7 @@ If this is your first time joining us for Coding & Cocktails, you'll want to [in
 
 {% endhint %}
 
-### 1. <a href="slack://channel?team=T06BZHS4U&id=C0BGBKGG6">Click Here to Open Slack</a>
+### 1. <a href="https://kcwit.slack.com/messages/C0BGBKGG6">Click Here to Open Slack</a>
 
 If you have a tip that helped you with a step on the worksheet, you can easily share it with the group in Slack. Or if there are any issues with the worksheet [we make typos or there's an update to a tool that we didn't catch before the session], we may post updates in Slack. Plus, after class is over, Slack becomes a tool for you to gain access to mentors as you go through the homework, or any other questions that arise.
 
