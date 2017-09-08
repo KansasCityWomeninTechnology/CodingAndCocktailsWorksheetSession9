@@ -108,20 +108,23 @@ If you joined us in May or August, you might have installed Node.js & **npm**, b
 
 6. Leave your workspace as **Public**.
 
-7. In the template section select the Node.js option.
+7. In the template section leave it on the HTML5 option.
 
 8. Click on the **Create Workspace** button.
 
   Cloud9 will take a minute and create your workspace here.
+  
+9. When the workspace opens, click on the small x on the right side of the tab that says `[M]/README.md` to clear your workspace.
 
-9. We need to update the version of Node.js that Cloud9 uses by default. We'll use a tool called **Node Version Manager** to use version 8. In the terminal section of your workspace, type: `nvm use 8`
+10. On the left side project pane, right click on the _hello-world.html_ file and choose **Delete**.  Then confirm Yes you want to continue.
+
+9. We need to update the version of Node.js that Cloud9 uses by default. We'll use a tool called **Node Version Manager** to use version 8. In the terminal section of your workspace (that's the bottom portion with the `~/worspace $` prompt), type: `nvm install 8`
+
+  ![](assets/images/c9_terminal.png)
 
  {% hint style='tip' %}
 
  To make the terminal section bigger, hover over the top line of the terminal section with your mouse - it will change to an up-down arrow icon and then you can drag up which will also make the file editing area smaller.
- 
- ![](assets/images/c9_terminal.png)
-
  {% endhint %}
 
 10. If we leave Cloud9 and come back to this workspace, the version of Node.js resets, so let's change the default. In the terminal, type: `nvm alias default 8`
