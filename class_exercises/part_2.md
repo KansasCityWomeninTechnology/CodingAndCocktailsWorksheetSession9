@@ -107,7 +107,7 @@ This code is saying that when someone requests the root route (`apiRouter.get('/
 
   1. Open a new tab and navigate to http://<your-workspace-name-yourusername>.c9users.io:8080/api
   
-  2. You should see your API data returned in the browser screen
+  2. You should see the `"message": "hooray! your API is working!"` data returned from your API in the browser screen
   
   You can skip the rest of the steps until the Answer key.
 
