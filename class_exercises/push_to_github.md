@@ -21,7 +21,7 @@ Make sure **Initialize this repository with a README** is **unchecked**.
   git init
   ```
 
-4. In Atom, right click in the left side Project pane and choose "**New File**." Name this file _.gitignore_ (**notice the filename starts with a .**) 
+4. In Atom, right click on the _trivia-api_ folder in the left side Project pane and choose "**New File**." Name this file _.gitignore_ (**notice the filename starts with a .**) 
 
 5. Double click on that file in the left side Project pane to open it for editing and in that file type:
 
@@ -55,6 +55,8 @@ For more information on working with remotes read [Git Basics - Working with Rem
   ```
   git status
   ```
+  
+  Your files should display under a header of "Untracked files:" and should be red in color.
 
 8. Stage the files so Git knows which files to deal with.  In this case we want all of them so we just add all the files in the current directory. The current directory can be referenced as: `.`.  Type:
 
@@ -69,6 +71,8 @@ For more information on working with remotes read [Git Basics - Working with Rem
   ```
   git status
   ```
+  
+  Now, your files should display under a header of "Changes to be committed:" and should be green in color.
 
 10. Commit the files so Git understands what group of changes to deal with.  Feel free to change the commit message (the part in the quotation marks) if you'd like!
 
