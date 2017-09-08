@@ -94,7 +94,7 @@ This code is saying that when someone requests the root route (`apiRouter.get('/
       });
       ```
 
-5. Run the application using the `nodemon` script you created in Part 1 so that when you save changes to code, the API will re-run with the changes.
+5. Save the file then run the application using the `nodemon` script you created in Part 1 so that when you save changes to code, the API will re-run with the changes.
 
   {% label %}Git Bash/iTerm2{% endlabel %}
   ```
@@ -102,6 +102,16 @@ This code is saying that when someone requests the root route (`apiRouter.get('/
   ```
 
 6. Open **Postman**
+
+<!--sec data-title="Chromebooks Only: Cloud9 Instructions" data-id="sectionPostman" data-show=true data-collapse=true ces-->
+
+  1. Open a new tab and navigate to http://<your-workspace-name-yourusername>.c9users.io:8080/api
+  
+  2. You should see your API data returned in the browser screen
+  
+  You can skip the rest of the steps until the Answer key.
+
+<!--endsec-->
 
   1. Make sure **GET** is selected in the HTTP dropdown.
     ![](/assets/images/postman.png)
