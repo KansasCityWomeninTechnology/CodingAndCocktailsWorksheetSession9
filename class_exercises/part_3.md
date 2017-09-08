@@ -135,7 +135,7 @@ Keeping code modularized allows for:
 3. You should see the `"message": "hooray! your API is working!"` data returned from your API in the browser screen
   <!--endsec-->
   
-13. Let's add a new route & serve a static JSON file for the response.
+16. Let's add a new route & serve a static JSON file for the response.
 
   1. In Atom, in the left side Project pane, create a new file in the _app_ folder and name it _quiz_fixture.js_.
 
@@ -152,14 +152,14 @@ Keeping code modularized allows for:
 
   4. Add this new sample quiz route to _app/routes/quiz_routes.js_ below the root route `/` function with a blank line separating them for readibility.
   
-    {% label %}Atom | app/routes/quiz_routes.js{% endlabel %}
-    ```
-    apiRouter.get('/sample', function(req, res) {
+  {% label %}Atom | app/routes/quiz_routes.js{% endlabel %}
+  ```
+  apiRouter.get('/sample', function(req, res) {
       res.json(sampleQuiz);
-    });
-    ```
+  });
+  ```
     
-14. In Postman, update your route to the one you just added `http://localhost:8080/api/sample`, the verb should still be set to GET and press the "Send" button.  Make sure you get a response here.  If you don't get a response, try to troubleshoot or grab a mentor for some help! 
+17. In Postman, update your route to the one you just added `http://localhost:8080/api/sample`, the verb should still be set to GET and press the "Send" button.  Make sure you get a response here.  If you don't get a response, try to troubleshoot or grab a mentor for some help! 
 
   <!--sec data-title="Chromebooks Only: Cloud9 Instructions" data-id="sectionPostman2" data-show=true data-collapse=true ces-->
 
