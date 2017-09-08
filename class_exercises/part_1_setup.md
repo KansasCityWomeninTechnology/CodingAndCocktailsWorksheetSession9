@@ -107,9 +107,9 @@ Dependency: A tool or piece of code that is required to make your application wo
 
 3. Open Atom via the command line
 
-{% hint style='danger' %}
-  **Cloud9 users:** Skip this step.
-{% endhint %}
+  {% hint style='danger' %}
+**Cloud9 users:** Skip this step.
+  {% endhint %}
 
   {% label %}Git Bash/iTerm2{% endlabel %}
   ```
