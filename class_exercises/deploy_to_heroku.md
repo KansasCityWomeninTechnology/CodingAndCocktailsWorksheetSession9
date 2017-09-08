@@ -5,6 +5,8 @@
 2. Install Heroku CLI.
    Click on the arrow below (^) on the section that corresponds to your Operating System.
    
+   **Cloud9/Chromebook users skip this step - it already comes installed on Cloud9**
+   
   <!--sec data-title="Mac" data-id="section5" data-show=true data-collapse=true ces-->
     Install Heroku CLI via Homebrew.  In iTerm2 type:
    
@@ -51,23 +53,23 @@ If you see warnings, grab a mentor to troubleshoot with the information on [the 
     
     You will be prompted for your email address and password that you signed up for Heroku with. If this is successful you will be shown the following message: 
   
-  > Logged in as email@example.com
+  > Logged in as youremail@example.com
 
     3. Close cmd.exe & go back to Git Bash
 <!--endsec-->
 
 
-<!--sec data-title="Mac" data-id="section8" data-show=true data-collapse=true ces-->
-    1. In iTerm2, login to Heroku with the Heroku CLI
+<!--sec data-title="Mac & Cloud9/Chromebooks" data-id="section8" data-show=true data-collapse=true ces-->
+    1. In iTerm2/Cloud9 Terminal, login to Heroku with the Heroku CLI
 
-       {% label %}iTerm2{% endlabel %}
+       {% label %}iTerm2/Cloud9 Terminal{% endlabel %}
        ```
        heroku login
        ```
     
       You will be prompted for your email address and password that you signed up for Heroku with. If this is successful you will be shown the following message: 
   
-      > Logged in as email@example.com
+      > Logged in as youremail@example.com
 <!--endsec-->
 
 4. Create a new empty application on Heroku to use for the API.
@@ -103,6 +105,8 @@ If you see warnings, grab a mentor to troubleshoot with the information on [the 
 
   If you don't get a response, grab a mentor to help troubleshoot!
   
-9. Try out some of the URLs you can put together from the [https://cocktail-trivia-api.herokuapp.com](https://cocktail-trivia-api.herokuapp.com/) form.
+9. Try out some of the URL endpoints you can put together from the [https://cocktail-trivia-api.herokuapp.com](https://cocktail-trivia-api.herokuapp.com/) form like you did earlier.  Just change the pieces after `/api`.
 
 10. High Five! You just created and deployed an API using Node.js! 
+
+  ![](/assets/images/highFive.gif)
