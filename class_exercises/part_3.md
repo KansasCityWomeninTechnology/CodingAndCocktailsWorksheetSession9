@@ -165,7 +165,7 @@ Keeping code modularized allows for:
 
     1. If you still have your tab open, just go to it, add `/sample` to the end of the URL and press enter.
   
-2. You should see the new data from _quiz_fixture.js_ returned from your API in the browser screen
+    2. You should see the new data from _quiz_fixture.js_ returned from your API in the browser screen
   <!--endsec-->
 
 15. Check your code with the [Part 3 Answer Key](https://github.com/KansasCityWomeninTechnology/trivia-api/tree/answer-key-part-3).
