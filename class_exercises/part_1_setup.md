@@ -6,7 +6,7 @@
 
   {% label %}iTerm2/Git Bash{% endlabel %}
   ```
-  cd <your home directory>/CodingAndCocktails
+  cd ~/CodingAndCocktails
   ```
   
   Then press **enter**. You will need to press enter after any command you enter in the command line.
@@ -47,7 +47,7 @@ Above if you had typed `cd tri` and then hit tab it would have completed to `cd 
 4. Download and install [Postman](https://www.getpostman.com/apps). Select the Download button in the section for your Operating System (Mac or Windows). 
 
   {% hint style='danger' %}
-Cloud9 users instead of downloading Postman you'll need to use the [Chrome extension](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop?hl=en).
+**Cloud9 users:** instead of downloading Postman you'll use a different command that we'll specify when needed.
   {% endhint %}
   
 ## package.json
@@ -82,7 +82,7 @@ If you were here last month, you might remember the _package.json_ and talking a
 
   {% label %}Git Bash/iTerm2{% endlabel %}
   ```
-  npm install cors express lodash node-fetch --save-dev
+  npm install cors express lodash node-fetch --save
   ```
   {% hint style='info' %}
 For additional context on the packages being used take a look at their pages on the npm website:
@@ -106,6 +106,10 @@ Dependency: A tool or piece of code that is required to make your application wo
   {% endhint %}
 
 3. Open Atom via the command line
+
+{% hint style='danger' %}
+  **Cloud9 users:** Skip this step.
+{% endhint %}
 
   {% label %}Git Bash/iTerm2{% endlabel %}
   ```
@@ -133,5 +137,7 @@ You can configure your system to recognize the command (ask a mentor for help) o
   ```
   "nm": "nodemon server.js"
   ```
+  
+  Don't forget to save the changes!
 
 8. Great work!  Compare your `package.json` with the [Part 1 Answer key](https://github.com/KansasCityWomeninTechnology/trivia-api/tree/answer-key-part-1).
