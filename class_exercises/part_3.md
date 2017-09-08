@@ -152,12 +152,12 @@ Keeping code modularized allows for:
 
   4. Add this new sample quiz route to _app/routes/quiz_routes.js_ below the root route `/` function with a blank line separating them for readibility.
   
-  {% label %}Atom | app/routes/quiz_routes.js{% endlabel %}
-  ```
-  apiRouter.get('/sample', function(req, res) {
-      res.json(sampleQuiz);
-  });
-  ```
+    {% label %}Atom | app/routes/quiz_routes.js{% endlabel %}
+    ```
+    apiRouter.get('/sample', function(req, res) {  
+        res.json(sampleQuiz);
+    });
+    ```
     
 17. In Postman, update your route to the one you just added `http://localhost:8080/api/sample`, the verb should still be set to GET and press the "Send" button.  Make sure you get a response here.  If you don't get a response, try to troubleshoot or grab a mentor for some help! 
 
