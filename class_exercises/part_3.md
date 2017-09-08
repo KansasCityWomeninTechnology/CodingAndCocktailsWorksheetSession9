@@ -163,7 +163,7 @@ Keeping code modularized allows for:
 
   <!--sec data-title="Chromebooks Only: Cloud9 Instructions" data-id="sectionPostman2" data-show=true data-collapse=true ces-->
 
-1. If you still have your tab open, just go to it, add `/sample` to the end of the URL and press enter.
+    1. If you still have your tab open, just go to it, add `/sample` to the end of the URL and press enter.
   
 2. You should see the new data from _quiz_fixture.js_ returned from your API in the browser screen
   <!--endsec-->
