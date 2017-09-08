@@ -160,7 +160,6 @@ Keeping code modularized allows for:
       ```
     
 17. In Postman, update your route to the one you just added `http://localhost:8080/api/sample`, the verb should still be set to GET and press the "Send" button.  Make sure you get a response here.  If you don't get a response, try to troubleshoot or grab a mentor for some help! 
-
   <!--sec data-title="Chromebooks Only: Cloud9 Instructions" data-id="sectionPostman2" data-show=true data-collapse=true ces-->
 
     1. If you still have your tab open, just go to it, add `/sample` to the end of the URL and press enter.
