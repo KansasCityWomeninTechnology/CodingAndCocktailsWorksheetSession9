@@ -107,7 +107,7 @@ This code is saying that when someone requests the root route (`apiRouter.get('/
 
   <!--sec data-title="Chromebooks Only: Cloud9 Instructions" data-id="sectionPostman" data-show=true data-collapse=true ces-->
 
-  1. Open a new tab and navigate to http://<your-workspace-name-yourusername>.c9users.io:8080/api
+  1. Open a new tab and navigate to http://< your-workspace-name-yourusername>.c9users.io:8080/api
   
   2. You should see the `"message": "hooray! your API is working!"` data returned from your API in the browser screen
   
