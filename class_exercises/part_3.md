@@ -134,7 +134,8 @@ Keeping code modularized allows for:
   2. If you need to re-open your application, open a new tab and navigate to http://< your-workspace-name-yourusername>.c9users.io:8080/api
   
   3. You should see the `"message": "hooray! your API is working!"` data returned from your API in the browser screen
-<!--endsec-->
+  <!--endsec-->
+  
 
 13. Let's add a new route & serve a static JSON file for the response.
 
