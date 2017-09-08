@@ -100,6 +100,8 @@ This code is saying that when someone requests the root route (`apiRouter.get('/
   ```
   npm run nm
   ```
+  
+  To cancel the running server, hit the `ctrl` + `c` keys.
 
 6. Open **Postman**
 
