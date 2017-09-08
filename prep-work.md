@@ -135,9 +135,9 @@ This will ensure Cloud9 uses the most recent version of **npm**.
 12. In the terminal, type `mkdir CodingAndCocktails` to create your folder/directory that you'll be working in tonight. You'll notice a new folder show up on the left side of your screen.
 
  {% hint style='danger' %}
+Any time the worksheet mentions to change directory to your home directory or type `cd ~` you will want to type `cd ~/workspace` instead.
 
- Any time the worksheet mentions to change directory to your home directory or type `cd ~` you will want to type `cd ~/workspace` instead.
-
+Any time the worksheet references Atom, just know that your workspace is all inclusive and you'll just be working within Cloud9.
  {% endhint %}
 
 <!--endsec-->
