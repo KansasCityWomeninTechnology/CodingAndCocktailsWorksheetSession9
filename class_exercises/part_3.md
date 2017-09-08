@@ -127,7 +127,7 @@ Keeping code modularized allows for:
 
 12. In Postman, make sure your route is still set to `http://localhost:8080/api`, the verb is still set to GET and press the "Send" button.  Make sure you still get a response here.  If you don't get a response, try to troubleshoot or grab a mentor for some help! 
 
-<!--sec data-title="Chromebooks Only: Cloud9 Instructions" data-id="sectionPostman2" data-show=true data-collapse=true ces-->
+<!--sec data-title="Chromebooks Only: Cloud9 Instructions" data-id="sectionPostman9" data-show=true data-collapse=true ces-->
 
   1. If you still have your tab open, just go to it and refresh the page to ensure your data still shows.  
   
