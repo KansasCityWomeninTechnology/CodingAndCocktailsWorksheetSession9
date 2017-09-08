@@ -167,5 +167,4 @@ Keeping code modularized allows for:
   
     2. You should see the new data from _quiz_fixture.js_ returned from your API in the browser screen
   <!--endsec-->
-
 15. Check your code with the [Part 3 Answer Key](https://github.com/KansasCityWomeninTechnology/trivia-api/tree/answer-key-part-3).
