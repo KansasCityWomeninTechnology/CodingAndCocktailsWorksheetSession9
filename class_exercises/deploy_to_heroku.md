@@ -55,7 +55,14 @@ If you see warnings, grab a mentor to troubleshoot with the information on [the 
   <!--endsec-->
 
   <!--sec data-title="Windows" data-id="section9" data-show=true data-collapse=true ces-->
-    In Git Bash type: `start cmd` to open your current directory in cmd.exe
+    In Git Bash type: 
+    
+    {% label %}cmd.exe{% endlabel %}
+    ```
+    start cmd
+    ```
+    
+    to open your current directory in cmd.exe
     
     In cmd.exe, type:
     
