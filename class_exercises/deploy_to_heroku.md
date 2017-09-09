@@ -113,4 +113,6 @@ If you see warnings, grab a mentor to troubleshoot with the information on [the 
   
 9. Try out some of the URL endpoints you can put together from the [https://cocktail-trivia-api.herokuapp.com](https://cocktail-trivia-api.herokuapp.com/) form like you did earlier.  Just change the pieces after `/api`.
 
-10. High Five! You just created and deployed an API using Node.js! 
+10. High Five! You just created and deployed an API using Node.js!
+
+ ![](/assets/images/hf.gif) 
