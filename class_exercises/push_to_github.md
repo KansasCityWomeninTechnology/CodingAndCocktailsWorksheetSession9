@@ -81,7 +81,7 @@ For more information on working with remotes read [Git Basics - Working with Rem
   git commit -m "Mom, look, my first API!"
   ```
 
-11. Push these changes up to the GitHub website (the origin remote you created in step 6) and set the upstream (`-u` this is the the gatekeeper of the project or the source of truth to which you wish to contribute to) to the remote's `master` branch. 
+11. Push these changes up to the GitHub website (the origin remote you created in step 6) and set the upstream (`-u`) this is the the gatekeeper of the project or the source of truth to which you wish to contribute to) to the remote's `master` branch. 
 
   {% label %}Git Bash/iTerm2{% endlabel %}
   ```
