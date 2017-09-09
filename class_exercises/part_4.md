@@ -13,7 +13,9 @@ Next, we require in a couple packages to use - `node-fetch` and `lodash`
 
 Next we create three functions:
 
-  1. `getQuiz` - Gets the data to use as our quiz.
+  1. `getQuiz` - Gets the data to use as our quiz. This is also the method that is exported from this file & used in `quiz_routes.js`. The parameters that this function accepts are the `req.params` passed in from the route portion of the API URL. See [the reference on GitHub](https://github.com/KansasCityWomeninTechnology/trivia-api/blob/answer-key-part-4/app/routes/quiz_routes.js#L17
+). `req.params` refer to the URL parameters you use in the request you're making. These are parsed by Express and placed into the `req` object. Take a look at the [Express documentation on `req.params`](http://expressjs.com/en/api.html#req.params) if you'd like more detail.
+  
       1. Calls the function that creates the trivia URL to use and stores that into a variable.  
       
       2. Makes a request to that URL using the [`node-fetch` package](https://www.npmjs.com/package/node-fetch)
