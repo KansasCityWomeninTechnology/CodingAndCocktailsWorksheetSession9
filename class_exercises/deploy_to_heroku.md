@@ -55,7 +55,7 @@ If you see warnings, grab a mentor to troubleshoot with the information on [the 
   <!--endsec-->
 
   <!--sec data-title="Windows" data-id="section9" data-show=true data-collapse=true ces-->
-    1. In Git Bash type: 
+    * In Git Bash type: 
     
     {% label %}Git Bash{% endlabel %}
     ```
@@ -64,18 +64,18 @@ If you see warnings, grab a mentor to troubleshoot with the information on [the 
     
     to open your current directory in cmd.exe
     
-    2. In cmd.exe, type:
+    * In cmd.exe, type:
     
     {% label %}cmd.exe{% endlabel %}
     ```
     heroku login
     ```
     
-    3. You will be prompted for your email address and password that you signed up for Heroku with. If this is successful you will be shown the following message:
+    * You will be prompted for your email address and password that you signed up for Heroku with. If this is successful you will be shown the following message:
     
     > Logged in as youremail@example.com
     
-    4. Close cmd.exe & go back to Git Bash
+    * Close cmd.exe & go back to Git Bash
   <!--endsec-->
 
 4. Create a new empty application on Heroku to use for the API.
