@@ -53,9 +53,8 @@ If you see warnings, grab a mentor to troubleshoot with the information on [the 
     
     You will be prompted for your email address and password that you signed up for Heroku with. If this is successful you will be shown the following message: 
     
-    > Logged in as youremail@example.com
-    
-    
+      > Logged in as youremail@example.com
+        
     3. Close cmd.exe & go back to Git Bash
   <!--endsec-->
 
