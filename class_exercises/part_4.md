@@ -73,7 +73,7 @@ Next we create three functions:
   
   ```
   //cocktail-trivia-api.herokuapp.com/api/category/entertainment-music/difficulty/easy
-  ````.  
+  ````
   
   You would take `/category/entertainment-music/difficulty/easy` and tack it onto the end of your `http://localhost:8080/api` URL to make your request to: `http://localhost:8080/api/category/entertainment-music/difficulty/easy`.
   
