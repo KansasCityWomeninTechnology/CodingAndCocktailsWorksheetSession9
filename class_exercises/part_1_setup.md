@@ -56,6 +56,8 @@ Above if you had typed `cd tri` and then hit tab it would have completed to `cd 
 
   {% hint style='info' %}
 If you were here last month, you might remember the _package.json_ and talking about how packages work! 
+
+  [Click here to view last month's worksheet on package managers](http://bit.ly/CnCAugWork)
   {% endhint %}
 
   Type:
