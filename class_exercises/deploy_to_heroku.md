@@ -49,7 +49,7 @@ If you see warnings, grab a mentor to troubleshoot with the information on [the 
     heroku login
     ```
     
-    2. You will be prompted for your email address and password that you signed up for Heroku with. If this is successful you will be shown the following message:
+    You will be prompted for your email address and password that you signed up for Heroku with. If this is successful you will be shown the following message:
     
     > Logged in as youremail@example.com
   <!--endsec-->
