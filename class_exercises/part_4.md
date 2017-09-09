@@ -69,13 +69,18 @@ Next we create three functions:
 
 6. In Postman, ensure the verb is still set to GET, update the route using everything after `/api` in the previous step to hit that route for your endpoint.
 
-  For example, if you choose "Music", "Easy" and 10 your generated URL would look like: `//cocktail-trivia-api.herokuapp.com/api/category/entertainment-music/difficulty/easy`.  You would take `/category/entertainment-music/difficulty/easy` and tack it onto the end of your `http://localhost:8080/api` URL to make your request to `http://localhost:8080/api/category/entertainment-music/difficulty/easy`.
+  For example, if you choose "Music", "Easy" and 10 your generated URL would look like: 
+  ```
+  //cocktail-trivia-api.herokuapp.com/api/category/entertainment-music/difficulty/easy
+  ````.  
+  
+  You would take `/category/entertainment-music/difficulty/easy` and tack it onto the end of your `http://localhost:8080/api` URL to make your request to: `http://localhost:8080/api/category/entertainment-music/difficulty/easy`.
   
   <!--sec data-title="Chromebooks Only: Cloud9 Instructions" data-id="sectionPostman3" data-show=true data-collapse=true ces-->
 
-  1. If you still have your tab open, update the end of the URL to reflect the category/difficulty/count configuration of your choosing.
+  * If you still have your tab open, update the end of the URL to reflect the category/difficulty/count configuration of your choosing.
   
-  2. You should see the new data from _quiz.js_ returned from your API in the browser screen
+  * You should see the new data from _quiz.js_ returned from your API in the browser screen
 <!--endsec-->
 
 7. Check your work with the [Part 4 Answer Key](https://github.com/KansasCityWomeninTechnology/trivia-api/tree/answer-key-part-4).
