@@ -69,7 +69,8 @@ Next we create three functions:
 
 6. In Postman, ensure the verb is still set to GET, update the route using everything after `/api` in the previous step to hit that route for your endpoint.
 
-  For example, if you choose "Music", "Easy" and 10 your generated URL would look like: 
+  For example, if you choose "Music", "Easy" and 10 your generated URL would look like:
+  
   ```
   //cocktail-trivia-api.herokuapp.com/api/category/entertainment-music/difficulty/easy
   ````.  
