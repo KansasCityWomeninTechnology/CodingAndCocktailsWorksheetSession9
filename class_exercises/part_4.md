@@ -15,8 +15,11 @@ Next we create three functions:
 
   1. `getQuiz` - Gets the data to use as our quiz.
       1. Calls the function that creates the trivia URL to use and stores that into a variable.  
+      
       2. Makes a request to that URL using the [`node-fetch` package](https://www.npmjs.com/package/node-fetch)
+      
       3. Gets the response in JSON (JavaScript Object Notation) format
+      
       4. Sends that result to change the data format into the response format that we want to use for our quiz. 
   
   2. `getTriviaURL` - Builds the URL for the quiz we've specified.
@@ -24,12 +27,20 @@ Next we create three functions:
         * The count of questions to return
         * The category to get questions for
         * The difficulty level to use for this quiz
-      2. Then the function builds out the correct URL using the initial `categoryMap` data and the count/category/difficulty options to return the URL to the caller.
+        
+        **Note:** This isn't your browser console like we've been used to at other Coding & Cocktails sessions this year focused on front-end code. In the Node.js environment, the console is tied to the node server. This means that when your API is running locally & a request is made to the API, you see these console logs in Git Bash or iTerm2. 
+        
+        When the API is deployed on Heroku, these `console.log` outputs get displayed in the heroku logs which you can access via the Heroku website or by typing `heroku logs` in Git Bash or iTerm2.
+        
+      2. Next, the function builds out the correct URL using the initial `categoryMap` data and the count/category/difficulty options to return the URL to the caller.
   
   3. `reformatQA` - Accepts one data format and transforms it into another.
       1. The map method applies a function to each piece of data passed in to the function
+      
       2. Sets up the incorrect answers to have a `correct` value of `false` and a `text` of the `answer`
+      
       3. Adds the correct answers with a `correct` value of `true` and a `text` of the `correct_answer`
+      
       4. Returns an object of the question `text` and uses the `shuffle` method from the `lodash` library to change the order of the answers to show as options.
   {% endhint %}
 
