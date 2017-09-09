@@ -28,7 +28,7 @@ If you see warnings, grab a mentor to troubleshoot with the information on [the 
   <!--endsec-->
 
   <!--sec data-title="Windows" data-id="section6" data-show=true data-collapse=true ces-->
-    [Click here to download the installer](https://cli-assets.heroku.com/heroku-cli/channels/beta/heroku-cli-x64.exe) and run through the install process.
+    [Click here to download the installer](https://cli-assets.heroku.com/heroku-cli/channels/stable/heroku-cli-x64.exe) and run through the install process.
     
     To verify Heroku CLI installation, type: 
     {% label %}Git Bash{% endlabel %}
