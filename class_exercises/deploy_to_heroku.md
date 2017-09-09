@@ -42,20 +42,20 @@ If you see warnings, grab a mentor to troubleshoot with the information on [the 
 3. Login to Heroku: 
 
   <!--sec data-title="Mac & Cloud9/Chromebooks" data-id="section8" data-show=true data-collapse=true ces-->
-    In iTerm2/Cloud9 Terminal, login to Heroku with the Heroku CLI:
+    1. In iTerm2/Cloud9 Terminal, login to Heroku with the Heroku CLI:
   
     {% label %}iTerm2/Cloud9 Terminal{% endlabel %}
     ```
     heroku login
     ```
     
-    You will be prompted for your email address and password that you signed up for Heroku with. If this is successful you will be shown the following message:
+    2. You will be prompted for your email address and password that you signed up for Heroku with. If this is successful you will be shown the following message:
     
     > Logged in as youremail@example.com
   <!--endsec-->
 
   <!--sec data-title="Windows" data-id="section9" data-show=true data-collapse=true ces-->
-    In Git Bash type: 
+    1. In Git Bash type: 
     
     {% label %}Git Bash{% endlabel %}
     ```
@@ -64,18 +64,18 @@ If you see warnings, grab a mentor to troubleshoot with the information on [the 
     
     to open your current directory in cmd.exe
     
-    In cmd.exe, type:
+    2. In cmd.exe, type:
     
     {% label %}cmd.exe{% endlabel %}
     ```
     heroku login
     ```
     
-    You will be prompted for your email address and password that you signed up for Heroku with. If this is successful you will be shown the following message:
+    3. You will be prompted for your email address and password that you signed up for Heroku with. If this is successful you will be shown the following message:
     
     > Logged in as youremail@example.com
     
-    Close cmd.exe & go back to Git Bash
+    4. Close cmd.exe & go back to Git Bash
   <!--endsec-->
 
 4. Create a new empty application on Heroku to use for the API.
