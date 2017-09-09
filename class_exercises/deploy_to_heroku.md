@@ -55,6 +55,7 @@ If you see warnings, grab a mentor to troubleshoot with the information on [the 
     
     > Logged in as youremail@example.com
     
+    
     3. Close cmd.exe & go back to Git Bash
   <!--endsec-->
 
