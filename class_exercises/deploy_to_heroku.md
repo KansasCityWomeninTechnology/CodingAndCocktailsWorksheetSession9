@@ -41,24 +41,47 @@ If you see warnings, grab a mentor to troubleshoot with the information on [the 
 
 3. Login to Heroku: 
 
-  <!--sec data-title="Windows" data-id="section7" data-show=true data-collapse=true ces-->
-    1. In Git Bash type: `start cmd` to open your current directory in cmd.exe
+<!--sec data-title="Mac" data-id="section5" data-show=true data-collapse=true ces-->
+    Install Heroku CLI via Homebrew.  In iTerm2 type:
+   
+    {% label %}iTerm2{% endlabel %}
+    ```
+    brew install heroku
+    ```
+    {% hint style='danger' %}
+If you see warnings, grab a mentor to troubleshoot with the information on [the heroku website](https://devcenter.heroku.com/articles/heroku-cli#macos-homebrew)
+    {% endhint %}
     
-    2. In cmd.exe, type:
+    To verify Heroku CLI installation type:
+    {% label %}iTerm2{% endlabel %}
+    ```
+    heroku --version
+    ```
+    This should display a message similar to the following:
+    > heroku-cli/6.13.5 (darwin-x64) node-v8.2.1
+  <!--endsec-->
+
+  <!--sec data-title="Windows" data-id="section6" data-show=true data-collapse=true ces-->
+    In Git Bash type: `start cmd` to open your current directory in cmd.exe
+    
+    In cmd.exe, type:
     
     {% label %}cmd.exe{% endlabel %}
     ```
     heroku login
     ```
     
-    You will be prompted for your email address and password that you signed up for Heroku with. If this is successful you will be shown the following message: 
-      > Logged in as youremail@example.com
-        
-    3. Close cmd.exe & go back to Git Bash
+    You will be prompted for your email address and password that you signed up for Heroku with. If this is successful you will be shown the following message:
+    
+    > Logged in as youremail@example.com
+    
+    Close cmd.exe & go back to Git Bash
   <!--endsec-->
+
+
   
   <!--sec data-title="Mac & Cloud9/Chromebooks" data-id="section8" data-show=true data-collapse=true ces-->
-    1. In iTerm2/Cloud9 Terminal, login to Heroku with the Heroku CLI
+    1. In iTerm2/Cloud9 Terminal, login to Heroku with the Heroku CLI:
   
     {% label %}iTerm2/Cloud9 Terminal{% endlabel %}
     ```
