@@ -10,6 +10,6 @@
 |Select all|`cmd` + `a`|`ctrl` + `a`|
 |Find|`cmd` + `f`|`ctrl` + `f`|
 |Switch between open apps/programs |`cmd` + `tab`|`alt` + `tab`|
-|Switch between programs on the taskbar| N/A | `windows key` + `tab`|
-|Switch between Chrome windows. |`shift` + `cmd` + `~`| N/A |
+|Switch between programs on the taskbar | N/A | `windows key` + `tab`|
+|Switch between Chrome windows |`shift` + `cmd` + `~`| N/A |
 
