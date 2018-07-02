@@ -1,11 +1,19 @@
 {
+  "root": "./docs",
   "plugins": [
     "codeblock-label",
     "custom-favicon",
     "hints",
-    "sectionx"
+    "sectionx",
+    "anchors"
   ],
   "pluginsConfig": {
-    "favicon": "assets/images/favicon.ico"
+    "favicon": "docs/assets/images/favicon.ico",
+    "hints": {
+      "info": "fa fa-info-circle fa-lg",
+      "tip": "fa fa-lightbulb-o fa-lg",
+      "danger": "fa fa-exclamation-circle fa-lg",
+      "working": "fa fa-question-circle fa-lg"
+    }
   }
 }

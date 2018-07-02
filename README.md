@@ -1,28 +1,27 @@
-<div>
-    <img src="/assets/images/logo.png" style="float: left; margin: 0px 15px 15px 0px; height:125px;">
-    <h2 style="display:inline-block;margin-top:1em;">Coding &amp; Cocktails Session 9:</h2>
-    <h3 style="margin-top:0;margin-bottom:2em;">Server-side APIs: Node.js, REST & SOAP</h3>
-</div>
-<hr>
+# Coding & Cocktails Session 9: Server-side APIs: Node.js, REST & SOAP
 
-### Overview {#overview}
-Tonight you learned about what an Application Programming Interface (API) is and how they are structured.  Now let's create one of our own and use it in our application!
+The `docs` directory contains worksheets for Coding & Cocktails session 9 published on Gitbooks: [Coding & Cocktails - Session 9: Server-side APIs: Node.js, REST & SOAP](https://legacy.gitbook.com/book/codingandcocktailskc/session-9-server-side-apis-node-js-rest-soap/content/).
 
-{% hint style='danger' %}
-While following along with the worksheet, type out the commands instead of doing a copy & paste (_unless instructed to copy & paste_) to avoid inadvertently using any incorrect characters.
-{% endhint %}
+## Getting Going
 
-{% hint style='tip' %}
-First time at Coding & Cocktails?   [Click here to Install the Tools!](http://bit.ly/CnCTheTools)
-{% endhint %}
+```bash
+npm install
+npm run docs:install
+```
+To serve Gitbook, `npm start`.
+To build without serving, `npm run docs:build`.
 
-{% hint style='tip' %}
-Don't know a term?   [Click here to check out our glossary!](http://bit.ly/CnCgloss)
-{% endhint %}
+## Associated Repos
+[https://github.com/KansasCityWomeninTechnology/trivia-api](https://github.com/KansasCityWomeninTechnology/trivia-api)
 
-{% hint style='tip' %}
-Want to be more efficient at working with your computer?
+## Associated CodePens 
 
-[Click here to see our list of Helpful Keyboard Shortcuts!](/reference-helpful-keyboard-shortcuts.md)
-{% endhint %}
 
+## TODO
+- [] 2018 updates!
+
+
+## License
+![](https://lh6.googleusercontent.com/osprAumZLusoNUcKnPtOWMijWYLZ8ydrUS0gMTvMCoyhSVBd69InqiXqQjc7fH8iQiVbZLXvyyvPZXwKjeyHuPnrd2zJT1mYLa1WoziryvxOo0q7nvMnpfeeVPBgfqW0bnp1--wa)![](https://lh5.googleusercontent.com/AZZipN4uXuU6FkxA0zLbrq9EwMhky22oNI8UtjQ2-Kgzy64Jmbij_IKUwXDcqGjnHWSMg9h3ii2Dx_SLI871nVn56NyF1VnmDbkEL2m9sJ_9YYGpNC8kdiYepai1jAZLEWWt8iTW)![](https://lh6.googleusercontent.com/GSxH81qYzBJkBR39GbviwKcwxem0RbN8XTx_6BOHgziQ6OomnG-au25ZSdiNQ4rX2p2HanRGa8_SzTPhJ3SKW-Vrs6fJ8N9s0FLq1EVSwUZXrLZuUVONachwFWwqTr6PMpn1csnu)
+
+This work is licensed by [http://kcwomenintech.org/](http://kcwomenintech.org/) under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
