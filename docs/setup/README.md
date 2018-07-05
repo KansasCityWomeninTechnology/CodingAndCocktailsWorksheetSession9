@@ -143,3 +143,27 @@ Any time the worksheet references Atom, just know that your workspace is all inc
 <!--endsec-->
 
 Yay, you're done with the prep work! You're ready to proceed to Part 1.
+
+## Helpful tips as you work through the worksheet {#tips}
+
+{% hint style='tip' %}
+View the worksheet and your IDE in split screen. 
+
+For Windows users, use `windows key` + `left arrow` or `windows` + `right arrow` to resize the application and position to the left or right half of your screen.
+
+For Mac users, hold down the full-screen button in the upper-left corner of a window to shrink and position to the left or right side of the screen. Release the button, then click another window to begin using both windows side by side.
+
+Mentors are happy to help!
+{% endhint %}
+
+{% hint style='working' %}
+Did you know you can collapse the table of contents for worksheets?
+
+Click on the hamburger menu (<i class="fa fa-bars" aria-hidden="true"></i>) at the top of the page to toggle the table of contents. You can also use the keyboard shortcut `s`.
+{% endhint %}
+
+{% hint style='working' %}
+Did you know you can customize font size and color of the worksheets to make it easier for you to see?
+
+Click on the font menu (<i class="fa fa-font" aria-hidden="true"></i>) at the top of the page to open a menu where you can make your font larger or smaller or change background color.{% endhint %}
+
