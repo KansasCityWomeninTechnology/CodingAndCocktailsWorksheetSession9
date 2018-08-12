@@ -1,148 +1,58 @@
-# Prep Work
+# Setup {#top}
+Tonight we will learn about Application Programming Interfaces (**API**). Follow the instructions on this page to prepare your workspace.
+
+<!-- trick markdown to give me a little space between these two sections of text -->
+## 
+If this is your first time at Coding & Cocktails [click here to install the tools](http://bit.ly/CnCTheTools). 
 
 {% hint style='danger' %}
-
-If this is your first time joining us for Coding & Cocktails, you'll want to [install our tools](http://bit.ly/CnCTools) before you go any further.
-
-{% endhint %}
-
-### 1. <a href="https://kcwit.slack.com/messages/C0BGBKGG6">Click Here to Open Slack</a>
-
-If you have a tip that helped you with a step on the worksheet, you can easily share it with the group in Slack. Or if there are any issues with the worksheet [we make typos or there's an update to a tool that we didn't catch before the session], we may post updates in Slack. Plus, after class is over, Slack becomes a tool for you to gain access to mentors as you go through the homework, or any other questions that arise.
-
-{% hint style='danger' %}
-
-If you're using a Chromebook, skip down to the Cloud9 instructions at the bottom.
-
+If you are using a Chromebook, please skip to the [Chromebook instructions](#chromebook-instructions) below!
 {% endhint %}
 
 
-### 2. Install/Update Node.js & npm {#install-nodejs}
+## Requirements for this session
 
-{% hint style='danger' %}
+You will need the following tools for the worksheet:
+1. [Chrome browser](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/tools-browser/)
 
-If you joined us in May or August, you might have installed Node.js & **npm**, but you'll still want to update to the latest version of Node.js & **npm**.
+1. [GitHub account](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/user-accounts/)
 
+1. [Git](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/tools-git/)
+   {% hint style='tip' %}
+You don't need to install GitKraken for tonight's worksheet.
+   {% endhint %}
+
+1. [Atom IDE](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/tools-atom/)
+
+1. [Node & npm](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/tools-node/)
+
+1. [Terminal for your OS](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/tools-command-line/)
+   {% hint style='danger' %}
+**Attention Windows users**
+
+Don't forget to open Cmder using **Run as administrator** to avoid file access problems tonight. Follow the instructions in the [Using Cmder section of The Tools](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/tools-command-line/cmder.html#using-cmder).
+
+
+Use Cmder for tonight's session. You will have problems if you use Git Bash. Feel free to grab a mentor if you need help installing Cmder.
+   {% endhint %}
+
+1. [Coding & Cocktails folder](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/tips-directory-structure/)
+
+
+## Ensure you are on the correct version of Node & npm
+
+{% hint style='info' %}
+The <i class="fa fa-share fa-rotate-180"></i> icon tells you when to press `Enter`.
 {% endhint %}
 
-1.  Open Git Bash or iTerm2
+1.  Open your terminal. Type `node --version` <i class="fa fa-share fa-rotate-180"></i>.
 
-  {% hint style='info' %}
+1. If your version of Node is not >= 9.11, follow the instructions in [The Tools](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/tools-node/) to upgrade Node for your OS.
 
-  The "terminal" and "command line" (aka CLI, command line interface) are the same thing.
-  - On Windows, we use **Git Bash**
-  - On Mac, we use **iTerm2**
+1. In your terminal type `npm --version` <i class="fa fa-share fa-rotate-180"></i>.
 
-  {% endhint %}
+1. If your version of npm is not >= 5.8 or if you just installed Node, follow the instructions in [The Tools](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/tools-node/#npm) to upgrade npm for your OS.
 
-2.  In your CLI, type: `node --version`
-
-    Do you get a version number [_Version **8 or greater** required._]?
-
-    1. No version number [something like `node: command not found`]. You need to install Node.
-
-      <!--sec data-title="Mac - Install Node" data-id="sectionInstallMac" data-show=true data-collapse=true ces-->
-
-      1. In iTerm2, type: `brew update`
-
-      2. When that finishes, type: `brew install node`
-
-      3. Confirm `node --version` returns a version **8 or greater**.
-
-      <!--endsec-->
-
-      <!--sec data-title="Windows - Install Node" data-id="sectionInstallWindows" data-show=true data-collapse=true ces-->
-
-      1. [Download](https://nodejs.org/en/) the **Current** installer for Windows [v.8.4.0].
-
-      2. Double-click on the downloaded file & follow the installation prompts.
-
-      3. When that finishes, confirm `node --version` returns a version **8 or greater**.
-
-      <!--endsec-->
-
-    2. If your version number is **8 or greater**, proceed to Step 3.
-
-    3. If your version number is less than **8**, you'll need to update Node.
-
-      <!--sec data-title="Mac - Update Node" data-id="sectionUpdateMac" data-show=true data-collapse=true ces-->
-
-      1. In iTerm2, type the following: `brew update`
-
-      2. When that finishes, type: `brew upgrade node`
-
-      3. Confirm `node --version` returns a version **8 or greater**.
-
-      <!--endsec-->
-
-      <!--sec data-title="Windows - Update Node" data-id="sectionUpdateWindows" data-show=true data-collapse=true ces-->
-
-      1. [Download](https://nodejs.org/en/) the **Current** installer for Windows [v.8.4.0].
-
-      2. Double-click on the downloaded file & follow the installation prompts.
-
-      3. When that finishes, confirm `node --version` returns a version **8 or greater**.
-
-      <!--endsec-->  
-
-3. Let's check your version of **npm** [which was installed with Node]. [_Version **5 or greater** required._]  
-   In your CLI, type: `npm --version`  
-
-   1. If your version is **5 or greater**, proceed to Part 1.
-
-   2. If your version is less than **5**, update to the latest by typing: `npm install npm -g`
-
-<!--sec data-title="Chromebooks Only: Cloud9 Instructions" data-id="section0" data-show=true data-collapse=true ces id="chromebook"-->
-
-1. Sign up for an account at [c9.io](https://c9.io)
-
-  Note: It will ask you for credit card information, but you will not get charged for anything since we do not use features of Cloud9 that cost money. Ask a mentor for the Coding & Cocktails card for Cloud9.
-
-2. Confirm your account from your email and log in to Cloud9.
-
-3. Select **Workspaces** from the left side panel if you are not already there.
-
-4. Choose **Create a new workspace**.
-
-5. Add a name for your workspace - it can be anything you like. You do not need a description, but feel free to add one if you like.
-
-6. Leave your workspace as **Public**.
-
-7. In the template section leave it on the HTML5 option.
-
-8. Click on the **Create Workspace** button.
-
-  Cloud9 will take a minute and create your workspace here.
-  
-9. When the workspace opens, click on the small x on the right side of the tab that says `[M]/README.md` to clear your workspace.
-
-10. On the left side project pane, right click on the _hello-world.html_ file and choose **Delete**.  Then confirm Yes you want to continue.
-
-9. We need to update the version of Node.js that Cloud9 uses by default. We'll use a tool called **Node Version Manager** to use version 8. In the terminal section of your workspace (that's the bottom portion with the `~/worspace $` prompt), type: `nvm install 8`
-
-  ![](assets/images/c9_terminal.png)
-
- {% hint style='tip' %}
-
- To make the terminal section bigger, hover over the top line of the terminal section with your mouse - it will change to an up-down arrow icon and then you can drag up which will also make the file editing area smaller.
- {% endhint %}
-
-10. If we leave Cloud9 and come back to this workspace, the version of Node.js resets, so let's change the default. In the terminal, type: `nvm alias default 8`
-
-11. In the terminal, type: `npm install -g npm`  
-This will ensure Cloud9 uses the most recent version of **npm**.
-
-12. In the terminal, type `mkdir CodingAndCocktails` to create your folder/directory that you'll be working in tonight. You'll notice a new folder show up on the left side of your screen.
-
- {% hint style='danger' %}
-Any time the worksheet mentions to change directory to your home directory or type `cd ~` you will want to type `cd ~/workspace` instead.
-
-Any time the worksheet references Atom, just know that your workspace is all inclusive and you'll just be working within Cloud9.
- {% endhint %}
-
-<!--endsec-->
-
-Yay, you're done with the prep work! You're ready to proceed to Part 1.
 
 ## Helpful tips as you work through the worksheet {#tips}
 
@@ -167,3 +77,8 @@ Did you know you can customize font size and color of the worksheets to make it 
 
 Click on the font menu (<i class="fa fa-font" aria-hidden="true"></i>) at the top of the page to open a menu where you can make your font larger or smaller or change background color.{% endhint %}
 
+<!-- trick markdown to give me a little space between these two sections of text -->
+## 
+<!--sec data-title="Chromebook instructions" data-id="section0" data-show=true data-collapse=true ces-->
+{% include "./chromebook-instructions.md" %}
+<!--endsec-->

@@ -1,12 +1,10 @@
-# Part 6: Deploy to Heroku
+# Deploy to Heroku
 
-1. In Google Chrome, navigate to [https://signup.heroku.com](https://signup.heroku.com) and create an account.
+1. In Chrome, navigate to [https://signup.heroku.com](https://signup.heroku.com) and create an account.
 
 2. Install Heroku CLI.
    Click on the arrow below (^) on the section that corresponds to your Operating System.
-   
-   **Cloud9/Chromebook users skip this step - it already comes installed on Cloud9**
-   
+      
   <!--sec data-title="Mac" data-id="section5" data-show=true data-collapse=true ces-->
     Install Heroku CLI via Homebrew.  In iTerm2 type:
    
@@ -37,16 +35,34 @@ If you see warnings, grab a mentor to troubleshoot with the information on [the 
     ```
     This should display a message similar to the following:
     > heroku-cli/6.13.5 (darwin-x64) node-v8.2.1
+
+    {% hint style='danger' %}
+If Cmder can't find `heroku` try closing Cmder and re-opening it. Applications installed after a CLI window is already opened may not immediately be available on the system PATH.
+    {% endhint %}
   <!--endsec-->
 
-**JAD double check cmder login is visible in Monokai theme**
+  <!--sec data-title="CodeAnywhere" data-id="section6" data-show=true data-collapse=true ces-->
+    Install Heroku by typing the following command in your terminal and pressing `Enter`.
+
+    {% label %}CodeAnywhere Terminal{% endlabel %}
+    ```bash
+    wget -O- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+    ```
+
+    To verify Heroku CLI installation, type: 
+    {% label %}CodeAnywhere Terminal{% endlabel %}
+    ```bash
+    heroku --version
+    ```
+
+    This should display a message similar to the following:
+    > heroku-cli/6.13.5 (darwin-x64) node-v8.2.1
+  <!--endsec-->
+
+**JAD TODO double check cmder login is visible in Monokai theme**
 
 3. Login to Heroku: 
-
-  <!--sec data-title="Mac & Cloud9/Chromebooks" data-id="section8" data-show=true data-collapse=true ces-->
-    * In iTerm2/Cloud9 Terminal, login to Heroku with the Heroku CLI:
-  
-    {% label %}iTerm2/Cloud9 Terminal{% endlabel %}
+    {% label %}iTerm2/Cmder{% endlabel %}
     ```bash
     heroku login
     ```
@@ -54,19 +70,6 @@ If you see warnings, grab a mentor to troubleshoot with the information on [the 
     * You will be prompted for your email address and password that you signed up for Heroku with. If this is successful you will be shown the following message:
     
     > Logged in as youremail@example.com
-  <!--endsec-->
-
-  <!--sec data-title="Windows" data-id="section9" data-show=true data-collapse=true ces-->
-    * In Cmder type: 
-    
-    {% label %}Cmder{% endlabel %}
-    ```bash
-    heroku login
-    ```    
-    * You will be prompted for your email address and password that you signed up for Heroku with. If this is successful you will be shown the following message:
-    
-    > Logged in as youremail@example.com    
-  <!--endsec-->
 
 4. Create a new empty application on Heroku to use for the API.
 

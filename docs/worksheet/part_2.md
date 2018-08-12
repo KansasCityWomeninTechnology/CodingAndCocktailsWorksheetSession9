@@ -96,7 +96,7 @@ This code is saying that when someone requests the root route (`apiRouter.get('/
 
 5. Save the file then run the application using the `nodemon` script you created in the last section so that when you save changes to code, the API will re-run with the changes.
 
-  {% label %}Git Bash/iTerm2{% endlabel %}
+  {% label %}Cmder/iTerm2{% endlabel %}
   ```bash
   npm run nm
   ```
@@ -105,11 +105,17 @@ This code is saying that when someone requests the root route (`apiRouter.get('/
 
 6. Open **Postman**
 
-  <!--sec data-title="Chromebooks Only: Cloud9 Instructions" data-id="sectionPostman" data-show=true data-collapse=true ces-->
+  <!--sec data-title="Chromebooks Only: CodeAnywhere Instructions" data-id="sectionPostman" data-show=true data-collapse=true ces-->
 
-  1. Open a new tab and navigate to http://< your-workspace-name-yourusername>.c9users.io:8080/api
+  1. Inside CodeAnywhere, open the tab named "KCWIT" that is not your terminal. Find the section that says "To access an application running on your Container..." and open the link in a new tab.
+     {% hint style='info' %}
+If you closed this tab, reopen it by right clicking on **KCWIT** container and select **Info**.
+     {% endhint %}
   
-  2. You should see the `"message": "hooray! your API is working!"` data returned from your API in the browser screen
+  2. In the new tab, add the port and the route we created to the URL. Your new URL may look something like 
+  `http://KCWIT-gracehopper624801.codeanyapp.com:8080/api`
+  
+  3. You should see the `"message": "hooray! your API is working!"` data returned from your API in the browser screen
   
   You can skip the rest of the steps until the Answer key.
 

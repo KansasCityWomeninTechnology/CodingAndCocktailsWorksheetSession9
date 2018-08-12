@@ -57,7 +57,7 @@ Notice the `res.json` code is indented and there are blank lines above and below
   {% hint style='tip' %}
 In order to tell the require statement where to look for the file (in the same directory where the _index.js_ file is located) use `./`. 
 
-To learn more about file paths read [HTML File Paths on w3schools](https://www.w3schools.com/html/html_filepaths.asp).  File paths are the same across JavaScript, HTML, CSS, and in the command line (Git Bash or iTerm2). 
+To learn more about file paths read [HTML File Paths on w3schools](https://www.w3schools.com/html/html_filepaths.asp).  File paths are the same across JavaScript, HTML, CSS, and in the command line (Cmder or iTerm2). 
   {% endhint %}
   
   If you're stuck here grab a mentor or open up the hint section below for more detail.
@@ -92,7 +92,7 @@ Keeping code modularized allows for:
 * Easier testing of specific areas of code  
     {% endhint %}
     {% hint style='info' %}
-**Caution**: There is some difference in JavaScript written on the server side in Node.js. `module.exports` is one example that is only available in the server-side Node environment.  This is not natively available in your browser (Google Chrome, Microsoft Edge, Firefox, etc) so without additional tools like Webpack or Browserify you wouldn't see this in client-side/front-end JavaScript code.
+**Caution**: There is some difference in JavaScript written on the server side in Node.js. `module.exports` is one example that is only available in the server-side Node environment.  This is not natively available in your browser (Chrome, Microsoft Edge, Firefox, etc) so without additional tools like Webpack or Browserify you wouldn't see this in client-side/front-end JavaScript code.
     {% endhint %}
    
   3. We want to export a function here.  Do you remember what a function structure looks like? Give it a try and then expand the section below to check your work. This function should take two parameters: `app` and `db`.
@@ -140,14 +140,15 @@ Your code in _app/routes/index.js_ will look like this
 
 12. In Postman, make sure your route is still set to `http://localhost:8080/api`, the verb is still set to **GET** and press the **Send** button.  Make sure you still get a response here.  If you don't get a response, try to troubleshoot or grab a mentor for some help! 
 
-  <!--sec data-title="Chromebooks Only: Cloud9 Instructions" data-id="sectionPostman9" data-show=true data-collapse=true ces-->
-1. If you still have your tab open, just go to it and refresh the page to ensure your data still shows.
-  
-2. If you need to re-open your application, open a new tab and navigate to http://< your-workspace-name-yourusername>.c9users.io:8080/api
-  
-3. You should see the `"message": "hooray! your API is working!"` data returned from your API in the browser screen
+  <!--sec data-title="Chromebooks Only: CodeAnywhere Instructions" data-id="sectionPostman9" data-show=true data-collapse=true ces-->
+  1. If you still have your tab open from the previous section, go to it and refresh the page to ensure your data still shows.
+    
+  2. If you need to re-open your application, find the URL for your application in the **KCWIT** container information tab and open a new tab in Chrome. Add the port and the route to the URL. Your URL may look something like
+  `http://KCWIT-gracehopper624801.codeanyapp.com:8080/api`
+    
+  3. You should see the `"message": "hooray! your API is working!"` data returned from your API in the browser screen
   <!--endsec-->
-  
+
 16. Let's add a new route and serve a static JSON file for the response.
 
   1. In Atom, in the left side **Project** pane, create a new file in the "app" folder and name it _quiz_fixture.js_.
@@ -182,7 +183,7 @@ Your code in _app/routes/quiz_routes.js_ will look like this
 17. In Postman, update your route to the one you just added `http://localhost:8080/api/sample`, the verb should still be set to **GET** and press the **Send** button.  Make sure you get a response here.  If you don't get a response, try to troubleshoot or grab a mentor for some help! 
   <!--sec data-title="Chromebooks Only: Cloud9 Instructions" data-id="sectionPostman2" data-show=true data-collapse=true ces-->
 
-    1. If you still have your tab open, just go to it, add `/sample` to the end of the URL and press enter.
+    1. If you still have your tab open, go to it and add `/sample` to the end of the URL and press `Enter`.
   
     2. You should see the new data from _quiz_fixture.js_ returned from your API in the browser screen
   <!--endsec-->

@@ -1,10 +1,13 @@
 # Push to GitHub
 
-1. Make sure you have created your GitHub account from [the tools setup](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/user-accounts---github-slack--codecademy.html) and are logged in to [https://github.com](https://github.com/)
+1. Log in to GitHub by navigating to [https://github.com](https://github.com/).
+   {% hint style='tip' %}
+Don't have Git or a GitHub account? Follow the instructions in [Setup instructions](/setup) to install Git and create your GitHub account.
+   {% endhint %}
 
 2. Create a new repository named **trivia-api** on github.com.
 
-  1. In Google chrome, navigate to [https://github.com](https://github.com/)
+  1. In Chrome, navigate to [https://github.com](https://github.com/)
   
   2. In the upper-right corner, press <span class="octicon octicon-plus"></span> and then select **New repository**.
 
@@ -20,6 +23,9 @@ Make sure **Initialize this repository with a README** is **unchecked**.
   ```bash
   git init
   ```
+   {% hint style='tip' %}
+Feel free to grab a mentor if you didn't have the opportunity to attend the Git session or if you need a refresher!
+   {% endhint %}
 
 4. In Atom, right click on the "trivia-api" folder in the left side **Project** pane and choose **New File**. Name this file _.gitignore_ (**notice the filename starts with a .**) 
 
@@ -36,7 +42,7 @@ Make sure **Initialize this repository with a README** is **unchecked**.
 For more information on working with remotes read [Git Basics - Working with Remotes from the Pro Git book](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes)
   {% endhint %}
 
-  1. In Google Chrome on the GitHub site make sure you have your `trivia-api` repository open.
+  1. In Chrome on the GitHub site make sure you have your `trivia-api` repository open.
   
   2. Click on the <span class="octicon octicon-clippy"></span> button to copy the URL.
      ![](/assets/images/gitClone.png)
@@ -67,7 +73,7 @@ For more information on working with remotes read [Git Basics - Working with Rem
 
 9. Check to ensure all of your files are staged and ready to be committed.
 
-  {% label %}Git Bash/iTerm2{% endlabel %}
+  {% label %}Cmder/iTerm2{% endlabel %}
   ```bash
   git status
   ```

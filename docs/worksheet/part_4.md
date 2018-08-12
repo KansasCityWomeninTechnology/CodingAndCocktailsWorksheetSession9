@@ -16,13 +16,13 @@ Next we create three functions:
   1. `getQuiz` - Gets the data to use as our quiz. This is also the method exported from this file and used in `quiz_routes.js`. The parameters that this function accepts are the `req.params` passed in from the route portion of the API URL. See [the reference on GitHub](https://github.com/KansasCityWomeninTechnology/trivia-api/blob/answer-key-part-4/app/routes/quiz_routes.js#L17
 ). `req.params` refer to the URL parameters you use in the request you're making. These are parsed by Express and placed into the `req` object. Take a look at the [Express documentation on `req.params`](http://expressjs.com/en/api.html#req.params) if you'd like more detail.
   
-      1. Calls the function that creates the trivia URL to use and stores that into a variable.  
+      1. Calls the function that creates the trivia URL to use and stores that into a variable
       
       2. Makes a request to that URL using the [`node-fetch` package](https://www.npmjs.com/package/node-fetch)
       
       3. Gets the response in JSON (JavaScript Object Notation) format
       
-      4. Sends that result to change the data format into the response format that we want to use for our quiz. 
+      4. Sends that result to change the data format into the response format that we want to use for our quiz
   
   2. `getTriviaURL` - Builds the URL for the quiz we've specified.
       1. First logs data to the console: 
@@ -30,7 +30,7 @@ Next we create three functions:
         * The category to get questions for
         * The difficulty level to use for this quiz
         
-        **Note:** This isn't your browser console like we've been used to at other Coding & Cocktails sessions this year focused on front-end code. In the Node.js environment, the console is tied to the node server. This means that when your API is running locally & a request is made to the API, you see these console logs in Cmder or iTerm2. 
+        **Note:** This isn't your browser console like we used at previous Coding & Cocktails sessions this year focused on front-end code. In the Node.js environment, the console is tied to the node server. This means that when your API is running locally and the API receives a request, you see these console logs in Cmder or iTerm2. 
         
         When the API is deployed on Heroku, these `console.log` outputs get displayed in the Heroku logs which you can access via the Heroku website or by typing `heroku logs` in Cmder or iTerm2.
         
@@ -43,7 +43,7 @@ Next we create three functions:
       
       3. Adds the correct answers with a `correct` value of `true` and a `text` of the `correct_answer`
       
-      4. Returns an object of the question `text` and uses the `shuffle` method from the `lodash` library to change the order of the answers to show as options.
+      4. Returns an object of the question `text` and uses the `shuffle` method from the `lodash` library to change the order of the answers to show as options
   {% endhint %}
 
 3. Import the newly created _quiz.js_ file into the _app/routes/quiz_routes.js_ file using a variable named `quiz`. Do you remember how to do this? 
@@ -62,7 +62,7 @@ Your code in _app/routes/quiz_routes.js_ will look like this
 </details>
    {% endhint %}
   
-4. In Atom, add a couple more routes to _quiz_routes.js_ to use the methods that were created in _app/quiz.js_.
+4. In Atom, add a couple more routes to _quiz_routes.js_ to use the methods created in _app/quiz.js_.
 
   {% label %}Atom | app/routes/quiz_routes.js{% endlabel %}
   ```js
@@ -85,7 +85,7 @@ Your code in _app/routes/quiz_routes.js_ will look like this
   });
   ```
 
-5. In Google Chrome, navigate to [https://cocktail-trivia-api.herokuapp.com](https://cocktail-trivia-api.herokuapp.com/) and fill out the form to create an endpoint, or URL, that you can use in Postman to view data returned from your API routes.
+5. In Chrome, navigate to [https://cocktail-trivia-api.herokuapp.com](https://cocktail-trivia-api.herokuapp.com/) and fill out the form to create an endpoint, or URL, that you can use in Postman to view data returned from your API routes.
 
 6. In Postman, ensure the verb is still set to **GET**, update the route using everything after `/api` in the previous step to call that route for your endpoint.
 
@@ -97,7 +97,7 @@ Your code in _app/routes/quiz_routes.js_ will look like this
   
   You would take `/category/entertainment-music/difficulty/easy` and tack it onto the end of your `http://localhost:8080/api` URL to make your request to: `http://localhost:8080/api/category/entertainment-music/difficulty/easy`.
   
-  <!--sec data-title="Chromebooks Only: Cloud9 Instructions" data-id="sectionPostman3" data-show=true data-collapse=true ces-->
+  <!--sec data-title="Chromebooks Only: CodeAnywhere Instructions" data-id="sectionPostman3" data-show=true data-collapse=true ces-->
 
   * If you still have your tab open, update the end of the URL to reflect the category/difficulty/count configuration of your choosing.
   

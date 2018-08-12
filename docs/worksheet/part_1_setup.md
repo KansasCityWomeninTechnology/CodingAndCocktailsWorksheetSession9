@@ -1,6 +1,11 @@
-# Initialize the Project
+## Prepare your workspace
 
-## Setup
+<!-- trick markdown to give me a little space between these two sections of text -->
+## 
+{% hint style='danger' %}
+Before starting the worksheet, please take a moment to review [Setup instructions](/setup) to ensure you have all the tools and workspace setup you need for tonight's work.
+{% endhint %}
+
 
 1. In your Command Line Interface (aka CLI: That means Cmder or iTerm2), navigate to your "CodingAndCocktails" folder by typing: 
 
@@ -17,7 +22,7 @@ cd %USERPROFILE%/CodingAndCocktails
   #### Command line woes?
   - Your home directory is:
     - Mac: `/users/<yourUsername>`
-    - Windows: `C:/%USERPROFILE%`
+    - Windows: `C:/<yourUsername>`
   - Command to change folders: `cd <folderToGoTo>`
   - Command to make a folder: `mkdir <newFolder>`
   - You can also use **~** for Mac or **%USERPROFILE%** for Windows as a shortcut in CLI for your home directory: `cd ~` for Mac and `cd %USERPROFILE%` for Windows.
@@ -26,14 +31,14 @@ cd %USERPROFILE%/CodingAndCocktails
   [bit.ly/CnCMarWork](http://bit.ly/CnCMarWork)
   {% endhint %}
 
-2.  Make a new folder named "trivia-api". 
+2. Make a new folder named "trivia-api". 
 
   {% label %}iTerm2/Cmder{% endlabel %}
   ```bash
   mkdir trivia-api
   ```
 
-3.  Move into that new folder.
+3. Navigate into that new folder.
 
   {% label %}iTerm2/Cmder{% endlabel %}
   ```bash
@@ -49,7 +54,7 @@ Above, if you had typed `cd tri` and then press `Tab` it would have completed to
 4. Download and install [Postman](https://www.getpostman.com/apps). Select the Download button in the section for your Operating System (Mac or Windows). 
 
   {% hint style='danger' %}
-**Cloud9 users:** instead of downloading Postman you'll use a different command that we'll specify when needed.
+**CodeAnywhere users** instead of downloading Postman you'll use a different command that we'll specify when needed.
   {% endhint %}
   
 ## package.json
@@ -112,7 +117,7 @@ Dependency: A required tool or piece of code to make your application work.
 3. Open Atom via the command line
 
   {% hint style='danger' %}
-**Cloud9 users:** Skip this step.
+**CodeAnywhere users:** You will use the built in text editor. Don't forget to refresh the container to see changes you made from the terminal.
   {% endhint %}
 
   {% label %}Cmder/iTerm2{% endlabel %}
