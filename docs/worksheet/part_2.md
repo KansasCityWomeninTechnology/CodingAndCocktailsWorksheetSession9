@@ -3,6 +3,9 @@
 1. In Atom, right click anywhere on the left side section of the screen where the "trivia-api" folder and the _package.json_ file are displayed. 
 
 2. Select **New File** and name it _server.js_.
+   {% hint style='tip' %}
+You are creating the _server.js_ file in the "trivia-api" folder. You will see it right underneath _package.json_.
+   {% endhint %}
 
 3. In order to use a package in your project, you must require it in to the file you want to use it in. Typically you set a variable equal to this require statement to give it a place from which the package can be used and accessed.
 
@@ -21,7 +24,7 @@
   var app = express();
   ```
   
-4. Next, press Enter to add a `port` variable on the next line and set it to `process.env.PORT || 8080`: 
+4. Next, press `Enter` to add a `PORT` variable on the next line and set it to `process.env.PORT || 8080`: 
 
   {% label %}Atom | server.js{% endlabel %}
   ```js
@@ -64,7 +67,7 @@ This code is saying that when someone requests the root route (`apiRouter.get('/
     app
     ```
   
-  2. Enable calling to the API from any origin - remember this is called "CORS.".  
+  2. Enable calling to the API from any origin - remember this is called **CORS**.  
   
     1. With your cursor at the end of the `app` line, press `Enter` to move to the next line.
     
@@ -75,6 +78,11 @@ This code is saying that when someone requests the root route (`apiRouter.get('/
       ```js
       .use(cors())
       ```
+    {% hint style='tip' %}
+Move your cursor to the end of the line-- outside of the final closing parenthesis. Some IDEs will do this for you, but some may not.
+
+When chaining commands, you want each command on a separate line.
+    {% endhint %}
     
   3. Tell the application to use the API router for any URL that starts with `/api`.
   

@@ -25,7 +25,7 @@ If you see warnings, grab a mentor to troubleshoot with the information on [the 
     > heroku-cli/6.13.5 (darwin-x64) node-v8.2.1
   <!--endsec-->
 
-  <!--sec data-title="Windows" data-id="section6" data-show=true data-collapse=true ces-->
+  <!--sec data-title="Windows" data-id="section6Win" data-show=true data-collapse=true ces-->
     [Click here to download the installer](https://cli-assets.heroku.com/heroku-cli/channels/stable/heroku-cli-x64.exe) and run through the install process.
     
     To verify Heroku CLI installation, type: 
@@ -41,7 +41,7 @@ If Cmder can't find `heroku` try closing Cmder and re-opening it. Applications i
     {% endhint %}
   <!--endsec-->
 
-  <!--sec data-title="CodeAnywhere" data-id="section6" data-show=true data-collapse=true ces-->
+  <!--sec data-title="CodeAnywhere" data-id="section6Chromebook" data-show=true data-collapse=true ces-->
     Install Heroku by typing the following command in your terminal and pressing `Enter`.
 
     {% label %}CodeAnywhere Terminal{% endlabel %}
@@ -56,10 +56,8 @@ If Cmder can't find `heroku` try closing Cmder and re-opening it. Applications i
     ```
 
     This should display a message similar to the following:
-    > heroku-cli/6.13.5 (darwin-x64) node-v8.2.1
+    > heroku-cli/7.9.3 linux-x64 node-v10.9.0
   <!--endsec-->
-
-**JAD TODO double check cmder login is visible in Monokai theme**
 
 3. Login to Heroku: 
     {% label %}iTerm2/Cmder{% endlabel %}

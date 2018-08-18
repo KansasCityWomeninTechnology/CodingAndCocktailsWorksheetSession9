@@ -42,6 +42,9 @@ The <i class="fa fa-share fa-rotate-180"></i> icon tells you when to press `Ente
 Your container may automatically turn off if you leave it idle for too long. Right click on "KCWIT" container and select **Restart**. You will have to navigate to the correct directory and depending on how long the container was idle, you may have to reinstall Node and npm. Check steps 5 & 6 above on how to check the Node & npm versions.
    {% endhint %}
 
-1. You will use the built in code editor tonight. CodeAnywhere will help you identify unsaved work for each file by showing a little circle by the filename.
+1. You will use the built in code editor tonight. 
+   {% hint style='tip' %}
+CodeAnywhere will help you identify unsaved work for each file by showing a little circle by the filename.
+   {% endhint %}
 
 1. Pick up with the worksheet starting at [Initialize the Project- package.json](/worksheet/part_1_setup.html#packagejson).

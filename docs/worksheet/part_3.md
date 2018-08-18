@@ -1,6 +1,9 @@
 # Using API Data
 
 1. In Atom, right click on the left side **Project** pane and select **New Folder**.  Name the new folder "app".
+   {% hint style='tip' %}
+You are creating a folder inside the "trivia-api" folder to help organize your code.
+   {% endhint %}
 
 2. Right click on the newly created "app" folder and select **New Folder**. The prompt for the folder name should already show `app/` (Mac) or `app\` (Windows).  Name the new folder "routes".
 
@@ -67,7 +70,7 @@ To learn more about file paths read [HTML File Paths on w3schools](https://www.w
 <summary>
 Need a little help? Expand this section for guidance. 
 </summary> 
-Your code in _app/routes/index.js_ will look like this
+Your code in <i>app/routes/index.js</i> will look like this
 <pre>
 <code class="lang-javascript">
   var quizRoutes = require('./quiz_routes');
@@ -102,7 +105,7 @@ Keeping code modularized allows for:
 <summary>
 Need a little help? Expand this section for guidance. 
 </summary> 
-Your code in _app/routes/index.js_ will look like this
+Your code in <i>app/routes/index.js</i> will look like this
 <pre>
 <code class="lang-javascript">
       module.exports = function(app, db) {
@@ -147,13 +150,14 @@ Your code in _app/routes/index.js_ will look like this
   `http://KCWIT-gracehopper624801.codeanyapp.com:8080/api`
     
   3. You should see the `"message": "hooray! your API is working!"` data returned from your API in the browser screen
+  
   <!--endsec-->
 
-16. Let's add a new route and serve a static JSON file for the response.
+13. Let's add a new route and serve a static JSON file for the response.
 
   1. In Atom, in the left side **Project** pane, create a new file in the "app" folder and name it _quiz_fixture.js_.
 
-  2. Copy all the contents from [this linked file](https://github.com/KansasCityWomeninTechnology/trivia-api/blob/answer-key-part-3/app/quiz_fixture.js) and paste the content into _quiz_fixture.js_.
+  2. Copy all the contents from [this linked file from our GitHub repo](https://raw.githubusercontent.com/KansasCityWomeninTechnology/trivia-api/answer-key-part-3/app/quiz_fixture.js) and paste the content into _quiz_fixture.js_.
 
   3. Import this new file into a variable named `sampleQuiz` in the _app/routes/quiz_routes.js_ file.  If you need further hints expand the section.
 
@@ -162,7 +166,7 @@ Your code in _app/routes/index.js_ will look like this
 <summary>
 Need a little help? Expand this section for guidance. 
 </summary> 
-Your code in _app/routes/quiz_routes.js_ will look like this
+Your code in <i>app/routes/quiz_routes.js</i> will look like this
 <pre>
 <code class="lang-javascript">
     var sampleQuiz = require('./../quiz_fixture.js');
@@ -171,7 +175,7 @@ Your code in _app/routes/quiz_routes.js_ will look like this
 </details>
    {% endhint %}
 
-  4. Add this new sample quiz route to _app/routes/quiz_routes.js_ below the root route `/` function with a blank line separating them for readability.
+  4. Add this new "sample" quiz route to _app/routes/quiz_routes.js_ below the root route `/` function with a blank line separating them for readability.
   
       {% label %}Atom | app/routes/quiz_routes.js{% endlabel %}
       ```js
@@ -181,10 +185,11 @@ Your code in _app/routes/quiz_routes.js_ will look like this
       ```
     
 17. In Postman, update your route to the one you just added `http://localhost:8080/api/sample`, the verb should still be set to **GET** and press the **Send** button.  Make sure you get a response here.  If you don't get a response, try to troubleshoot or grab a mentor for some help! 
-  <!--sec data-title="Chromebooks Only: Cloud9 Instructions" data-id="sectionPostman2" data-show=true data-collapse=true ces-->
+  <!--sec data-title="Chromebooks Only: CodeAnywhere Instructions" data-id="sectionPostman2" data-show=true data-collapse=true ces-->
 
     1. If you still have your tab open, go to it and add `/sample` to the end of the URL and press `Enter`.
   
-    2. You should see the new data from _quiz_fixture.js_ returned from your API in the browser screen
+    2. You should see the new data from _quiz_fixture.js_ returned from your API in the browser screen.
+    
   <!--endsec-->
 15. Check your code with the [Part 3 Answer Key](https://github.com/KansasCityWomeninTechnology/trivia-api/tree/answer-key-part-3).

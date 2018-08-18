@@ -2,7 +2,7 @@
 
 1. In Atom, in left side **Project** panel, right click on the "app" folder, and select **New File**. Name it _quiz.js_.
 
-2. Copy the contents [from this file on GitHub](https://github.com/KansasCityWomeninTechnology/trivia-api/blob/answer-key-part-4/app/quiz.js) and paste it into the _app/quiz.js_ file.
+2. Copy the contents [from this file on our GitHub](https://raw.githubusercontent.com/KansasCityWomeninTechnology/trivia-api/answer-key-part-4/app/quiz.js) and paste it into the _app/quiz.js_ file.
 
   {% hint style='info' %}
 ##### Let's walk through this code!
@@ -53,7 +53,7 @@ Next we create three functions:
 <summary>
 Need a little help? Expand this section for guidance. 
 </summary> 
-Your code in _app/routes/quiz_routes.js_ will look like this
+Your code in <i>app/routes/quiz_routes.js</i> will look like this
 <pre>
 <code class="lang-javascript">
     var quiz = require('./../quiz.js');
@@ -99,9 +99,16 @@ Your code in _app/routes/quiz_routes.js_ will look like this
   
   <!--sec data-title="Chromebooks Only: CodeAnywhere Instructions" data-id="sectionPostman3" data-show=true data-collapse=true ces-->
 
-  * If you still have your tab open, update the end of the URL to reflect the category/difficulty/count configuration of your choosing.
-  
-  * You should see the new data from _quiz.js_ returned from your API in the browser screen
-<!--endsec-->
+    1. If you still have your tab open, update the end of the URL to reflect the category/difficulty/count configuration of your choosing.
+    
+    2. You should see the new data from _quiz.js_ returned from your API in the browser screen. This is a little hard to read. Chrome DevTools will format it for us so let's view the response that way.
+
+    3. Open Chrome DevTools by pressing `ctrl` + `shift` + `i` and open the **Network** tab. Refresh the webpage so Chrome DevTools captures network requests.
+
+    4. Find your request in the list of network requests. The name of the request depends on your selection for the quiz. Once you find your request, open the **Preview** tab to see the formatted response. Feel free to grab a mentor for help!
+
+    ![](/assets/images/network-view.png)
+
+  <!--endsec-->
 
 7. Check your work with the [Part 4 Answer Key](https://github.com/KansasCityWomeninTechnology/trivia-api/tree/answer-key-part-4).
