@@ -1,0 +1,33 @@
+
+.checkpoint {
+    background-color: #fceaf1;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ba99c0;
+  }
+  
+  .badge {
+    display: table-cell;
+    padding-right: 15px;
+    padding-left: 5px;
+    background-color: inherit;
+    vertical-align: top;
+    font-size: 1.25em;
+  }
+
+  .certificate {
+    color: #009875;
+  }
+  
+  .checkmark {
+    color: white;
+  }
+  
+  .content {
+    display: table-cell;
+  }
+
+  .content summary {
+    font-size: 1.1em;
+    color: #484e78;
+  }

@@ -23,6 +23,6 @@ Don't know a term?   [Click here to check out our glossary!](http://bit.ly/CnCgl
 {% hint style='tip' %}
 Want to be more efficient at working with your computer?
 
-[Click here to see our list of Helpful Keyboard Shortcuts!](/reference-helpful-keyboard-shortcuts.md)
+[Click here to see our list of Helpful Keyboard Shortcuts!](/references/README.md)
 {% endhint %}
 

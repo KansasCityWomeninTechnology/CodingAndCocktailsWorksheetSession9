@@ -1,0 +1,17 @@
+@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/font/octicons.min.css';
+@import 'instructions.css';
+@import 'checkpoint.css';
+
+
+.markdown-section h2 {
+  margin-top: 60px;
+}
+
+.help-annotations { 
+  /* color: #666b8f; */
+  color: #A661DB;
+}
+.help-annotations-text {
+  color: white;
+}
