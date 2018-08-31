@@ -1,5 +1,5 @@
 # Setup {#top}
-Tonight we will learn about Application Programming Interfaces (**API**). Follow the instructions on this page to prepare your workspace.
+Tonight we will learn about Application Programming Interfaces (**API**). We'll create an API, push our code to [**GitHub**](https://github.com), and deploy it to [**Heroku**](https://www.heroku.com/). Follow the instructions on this page to prepare your workspace.
 
 <!-- trick markdown to give me a little space between these two sections of text -->
 ## 
@@ -37,6 +37,8 @@ Use Cmder for tonight's session. You will have problems if you use Git Bash. Fee
    {% endhint %}
 
 1. [Coding & Cocktails folder](https://codingandcocktailskc.gitbooks.io/coding-cocktails-the-tools/content/tips-directory-structure/)
+
+1. [Postman](https://www.getpostman.com/apps). Select the Download button in the section for your Operating System (Mac or Windows). 
 
 
 ## Ensure you are on the correct version of Node & npm

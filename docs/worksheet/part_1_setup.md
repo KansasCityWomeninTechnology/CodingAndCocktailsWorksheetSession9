@@ -50,12 +50,7 @@ If you start typing the name of a folder or file, press `Tab` and it will autoco
 
 Above, if you had typed `cd tri` and then press `Tab` it would have completed to `cd trivia-api` for you!
   {% endhint %}
-  
-4. Download and install [Postman](https://www.getpostman.com/apps). Select the Download button in the section for your Operating System (Mac or Windows). 
-
-  {% hint style='danger' %}
-**CodeAnywhere users** instead of downloading Postman you'll use a different command that we'll specify when needed.
-  {% endhint %}
+ 
   
 ## package.json
 
