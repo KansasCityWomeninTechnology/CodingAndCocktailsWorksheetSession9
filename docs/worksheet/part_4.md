@@ -2,7 +2,7 @@
 
 1. In Atom, in left side **Project** panel, right click on the "app" folder, and select **New File**. Name it _quiz.js_.
 
-2. Copy the contents [from this file on our GitHub](https://raw.githubusercontent.com/KansasCityWomeninTechnology/trivia-api/answer-key-part-4/app/quiz.js) and paste it into the _app/quiz.js_ file.
+2. Copy the contents [from this file on our GitHub](https://github.com/KansasCityWomeninTechnology/trivia-api/blob/answer-key-part-4/app/quiz.js) and paste it into the _app/quiz.js_ file.
 
   {% hint style='info' %}
 ##### Let's walk through this code!

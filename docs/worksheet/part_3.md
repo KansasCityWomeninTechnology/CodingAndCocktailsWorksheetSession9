@@ -157,7 +157,7 @@ Your code in <i>app/routes/index.js</i> will look like this
 
   1. In Atom, in the left side **Project** pane, create a new file in the "app" folder and name it _quiz_fixture.js_.
 
-  2. Copy all the contents from [this linked file from our GitHub repo](https://raw.githubusercontent.com/KansasCityWomeninTechnology/trivia-api/answer-key-part-3/app/quiz_fixture.js) and paste the content into _quiz_fixture.js_.
+  2. Copy all the contents from [this linked file from our GitHub repo](https://github.com/KansasCityWomeninTechnology/trivia-api/blob/answer-key-part-3/app/quiz_fixture.js) and paste the content into _quiz_fixture.js_.
 
   3. Import this new file into a variable named `sampleQuiz` in the _app/routes/quiz_routes.js_ file.  If you need further hints expand the section.
 

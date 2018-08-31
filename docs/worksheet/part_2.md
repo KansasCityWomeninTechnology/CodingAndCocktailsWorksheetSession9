@@ -60,7 +60,7 @@ This code is saying that when someone requests the root route (`apiRouter.get('/
 
 4. Next you'll configure the application by adding several methods to it using **chaining**.
 
-  1. Ensure there is a blank line between the end of the close of the routing function and your cursor.  Type: 
+  1. Ensure there is a blank line between the end of the close of the routing function (the routing function ends with a `});`) and your cursor.  Type: 
 
     {% label %}Atom | server.js{% endlabel %}
     ```js
