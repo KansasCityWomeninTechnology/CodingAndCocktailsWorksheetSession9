@@ -22,7 +22,7 @@ cd %USERPROFILE%/CodingAndCocktails
   #### Command line woes?
   - Your home directory is:
     - Mac: `/users/<yourUsername>`
-    - Windows: `C:/<yourUsername>`
+    - Windows: `C:/Users/<yourUsername>`
   - Command to change folders: `cd <folderToGoTo>`
   - Command to make a folder: `mkdir <newFolder>`
   - You can also use **~** for Mac or **%USERPROFILE%** for Windows as a shortcut in CLI for your home directory: `cd ~` for Mac and `cd %USERPROFILE%` for Windows.
