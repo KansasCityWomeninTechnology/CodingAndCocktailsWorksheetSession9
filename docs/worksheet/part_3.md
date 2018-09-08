@@ -21,7 +21,7 @@ You are creating a folder inside the "trivia-api" folder to help organize your c
   module.exports = apiRouter;
   ```
   
-  Similar to what we did in the last section, this code is requiring in the express package and creating an instance of the router here.
+  Similar to what we did in the last section, this code requires the express package which brings in the express package code so we can create an instance of the router here.
 
 5. Next, move the original route from _server.js_ to _quiz_routes.js_.
 
